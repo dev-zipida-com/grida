@@ -1,0 +1,13 @@
+.menu-item {
+  background-color: var(--darkmode-text-title-primary);
+  padding: 5px 16px;
+  display: flex;
+  align-items: center;
+}
+.dropdown-option-text {
+  color: var(--text-title);
+  font-family: var(--body-p1-regular-family);
+  font-size: var(--body-p1-regular-size);
+  font-weight: var(--body-p1-regular-weight);
+  line-height: var(--body-p1-regular-line-height);
+}

@@ -1,0 +1,13 @@
+empty:
+  - property: description
+    description: Customize description
+    type: ReactNode
+    default: '-'
+  - property: image
+    description: Customize image. Will treat as image url when string provided
+    type: ReactNode
+    default: Empty.PRESENTED_IMAGE_DEFAULT
+  - property: imageStyle
+    description: The style of image
+    type: CSSProperties
+    default: '-'

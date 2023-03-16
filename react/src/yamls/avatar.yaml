@@ -1,0 +1,63 @@
+avatar:
+  - property: alt
+    description: This attribute defines the alternative text describing the image
+    type: string
+    default: '-'
+  - property: gap
+    description: Letter type unit distance between left and right sides
+    type: number
+    default: '4'
+  - property: icon
+    description: Custom icon type for an icon avatar
+    type: ReactNode
+    default: '-'
+  - property: shape
+    description: The shape of avatar
+    type: circle | square
+    default: circle
+  - property: size
+    description: The size of the avatar
+    type: 'number | large | small | default | { xs: number, sm: number, ...}'
+    default: default
+  - property: src
+    description: The address of the image for an image avatar or image element
+    type: string | ReactNode
+    default: '-'
+  - property: srcSet
+    description: A list of sources to use for different screen resolutions
+    type: string
+    default: '-'
+  - property: draggable
+    description: Whether the picture is allowed to be dragged
+    type: boolean | 'true' | 'false'
+    default: '-'
+  - property: crossOrigin
+    description: CORS settings attributes
+    type: '''anonymous'' | ''use-credentials'' | '''''
+    default: '-'
+  - property: onError
+    description: >-
+      Handler when img load error, return false to prevent default fallback
+      behavior
+    type: () => boolean
+    default: '-'
+  - property: maxCount
+    description: Max avatars to show
+    type: number
+    default: '-'
+  - property: maxPopoverPlacement
+    description: The placement of excess avatar Popover
+    type: top | bottom
+    default: top
+  - property: maxPopoverTrigger
+    description: Set the trigger of excess avatar Popover
+    type: hover | focus | click
+    default: hover
+  - property: maxStyle
+    description: The style of excess avatar style
+    type: CSSProperties
+    default: '-'
+  - property: size
+    description: The size of the avatar
+    type: 'number | large | small | default | { xs: number, sm: number, ...}'
+    default: default

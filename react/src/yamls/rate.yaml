@@ -1,0 +1,73 @@
+rate:
+  - property: allowClear
+    description: Whether to allow clear when click again
+    type: boolean
+    default: 'true'
+  - property: allowHalf
+    description: Whether to allow semi selection
+    type: boolean
+    default: 'false'
+  - property: autoFocus
+    description: If get focus when component mounted
+    type: boolean
+    default: 'false'
+  - property: character
+    description: The custom character of rate
+    type: ReactNode | (RateProps) => ReactNode
+    default: <StarFilled />
+  - property: className
+    description: The custom class name of rate
+    type: string
+    default: '-'
+  - property: count
+    description: Star count
+    type: number
+    default: '5'
+  - property: defaultValue
+    description: The default value
+    type: number
+    default: '0'
+  - property: disabled
+    description: If read only, unable to interact
+    type: boolean
+    default: 'false'
+  - property: style
+    description: The custom style object of rate
+    type: CSSProperties
+    default: '-'
+  - property: tooltips
+    description: Customize tooltip by each character
+    type: string[]
+    default: '-'
+  - property: value
+    description: The current value
+    type: number
+    default: '-'
+  - property: onBlur
+    description: Callback when component lose focus
+    type: function()
+    default: '-'
+  - property: onChange
+    description: Callback when select value
+    type: 'function(value: number)'
+    default: '-'
+  - property: onFocus
+    description: Callback when component get focus
+    type: function()
+    default: '-'
+  - property: onHoverChange
+    description: Callback when hover item
+    type: 'function(value: number)'
+    default: '-'
+  - property: onKeyDown
+    description: Callback when keydown on component
+    type: function(event)
+    default: '-'
+  - property: blur()
+    description: Remove focus
+    type: ''
+    default: ''
+  - property: focus()
+    description: Get focus
+    type: ''
+    default: ''

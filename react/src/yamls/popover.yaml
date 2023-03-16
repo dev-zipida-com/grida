@@ -1,0 +1,9 @@
+popover:
+  - property: content
+    description: Content of the card
+    type: ReactNode | () => ReactNode
+    default: '-'
+  - property: title
+    description: Title of the card
+    type: ReactNode | () => ReactNode
+    default: '-'

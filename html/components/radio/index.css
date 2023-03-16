@@ -1,0 +1,14 @@
+.radio {
+  display: flex;
+  align-items: center;
+}
+.radio-input {
+  margin-right: 8px;
+}
+.radio-text-default {
+  color: var(--text-title);
+  font-family: var(--body-p1-regular-family);
+  font-size: var(--body-p1-regular-size);
+  font-weight: var(--body-p1-regular-weight);
+  line-height: var(--body-p1-regular-line-height);
+}

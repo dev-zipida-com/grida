@@ -1,0 +1,435 @@
+form:
+  - property: colon
+    description: >-
+      Configure the default value of colon for Form.Item. Indicates whether the
+      colon after the label is displayed (only effective when prop layout is
+      horizontal)
+    type: boolean
+    default: 'true'
+  - property: disabled
+    description: Set form component disable, only available for antd components
+    type: boolean
+    default: 'false'
+  - property: component
+    description: Set the Form rendering element. Do not create a DOM node for false
+    type: ComponentType | false
+    default: form
+  - property: fields
+    description: >-
+      Control of form fields through state management (such as redux). Not
+      recommended for non-strong demand. View example
+    type: FieldData[]
+    default: '-'
+  - property: form
+    description: >-
+      Form control instance created by Form.useForm(). Automatically created
+      when not provided
+    type: FormInstance
+    default: '-'
+  - property: initialValues
+    description: Set value by Form initialization or reset
+    type: object
+    default: '-'
+  - property: labelAlign
+    description: The text align of label of all items
+    type: left | right
+    default: right
+  - property: labelWrap
+    description: whether label can be wrap
+    type: boolean
+    default: 'false'
+  - property: labelCol
+    description: >-
+      Label layout, like <Col> component. Set span offset value like {span: 3,
+      offset: 12} or sm: {span: 3, offset: 12}
+    type: object
+    default: '-'
+  - property: layout
+    description: Form layout
+    type: horizontal | vertical | inline
+    default: horizontal
+  - property: name
+    description: Form name. Will be the prefix of Field id
+    type: string
+    default: '-'
+  - property: preserve
+    description: Keep field value even when field removed
+    type: boolean
+    default: 'true'
+  - property: requiredMark
+    description: >-
+      Required mark style. Can use required mark or optional mark. You can not
+      config to single Form.Item since this is a Form level config
+    type: boolean | optional
+    default: 'true'
+  - property: scrollToFirstError
+    description: Auto scroll to first failed field when submit
+    type: boolean | Options
+    default: 'false'
+  - property: size
+    description: Set field component size (antd components only)
+    type: small | middle | large
+    default: '-'
+  - property: validateMessages
+    description: Validation prompt template, description see below
+    type: ValidateMessages
+    default: '-'
+  - property: validateTrigger
+    description: Config field validate trigger
+    type: string | string[]
+    default: onChange
+  - property: wrapperCol
+    description: The layout for input controls, same as labelCol
+    type: object
+    default: '-'
+  - property: onFieldsChange
+    description: Trigger when field updated
+    type: function(changedFields, allFields)
+    default: '-'
+  - property: onFinish
+    description: Trigger after submitting the form and verifying data successfully
+    type: function(values)
+    default: '-'
+  - property: onFinishFailed
+    description: Trigger after submitting the form and verifying data failed
+    type: function({ values, errorFields, outOfDate })
+    default: '-'
+  - property: onValuesChange
+    description: Trigger when value updated
+    type: function(changedValues, allValues)
+    default: '-'
+  - property: colon
+    description: 'Used with label, whether to display : after label text.'
+    type: boolean
+    default: 'true'
+  - property: dependencies
+    description: Set the dependency field. See below
+    type: NamePath[]
+    default: '-'
+  - property: extra
+    description: >-
+      The extra prompt message. It is similar to help. Usage example: to display
+      error message and prompt message at the same time
+    type: ReactNode
+    default: '-'
+  - property: getValueFromEvent
+    description: Specify how to get value from event or other onChange arguments
+    type: '(..args: any[]) => any'
+    default: '-'
+  - property: getValueProps
+    description: Additional props with sub component
+    type: '(value: any) => any'
+    default: '-'
+  - property: hasFeedback
+    description: >-
+      Used with validateStatus, this option specifies the validation status
+      icon. Recommended to be used only with Input
+    type: boolean
+    default: 'false'
+  - property: help
+    description: >-
+      The prompt message. If not provided, the prompt message will be generated
+      by the validation rule.
+    type: ReactNode
+    default: '-'
+  - property: hidden
+    description: Whether to hide Form.Item (still collect and validate value)
+    type: boolean
+    default: 'false'
+  - property: htmlFor
+    description: Set sub label htmlFor
+    type: string
+    default: '-'
+  - property: initialValue
+    description: >-
+      Config sub default value. Form initialValues get higher priority when
+      conflict
+    type: string
+    default: '-'
+  - property: label
+    description: Label text
+    type: ReactNode
+    default: '-'
+  - property: labelAlign
+    description: The text align of label
+    type: left | right
+    default: right
+  - property: labelCol
+    description: >-
+      The layout of label. You can set span offset to something like {span: 3,
+      offset: 12} or sm: {span: 3, offset: 12} same as with <Col>. You can set
+      labelCol on Form which will not affect nest Item. If both exists, use Item
+      first
+    type: object
+    default: '-'
+  - property: messageVariables
+    description: The default validate field info
+    type: Record<string, string>
+    default: '-'
+  - property: name
+    description: Field name, support array
+    type: NamePath
+    default: '-'
+  - property: normalize
+    description: >-
+      Normalize value from component value before passing to Form instance. Do
+      not support async
+    type: (value, prevValue, prevValues) => any
+    default: '-'
+  - property: noStyle
+    description: No style for true, used as a pure field control
+    type: boolean
+    default: 'false'
+  - property: preserve
+    description: Keep field value even when field removed
+    type: boolean
+    default: 'true'
+  - property: required
+    description: Display required style. It will be generated by the validation rule
+    type: boolean
+    default: 'false'
+  - property: rules
+    description: Rules for field validation. Click here to see an example
+    type: Rule[]
+    default: '-'
+  - property: shouldUpdate
+    description: Custom field update logic. See below
+    type: boolean | (prevValue, curValue) => boolean
+    default: 'false'
+  - property: tooltip
+    description: Config tooltip info
+    type: 'ReactNode | TooltipProps & { icon: ReactNode }'
+    default: '-'
+  - property: trigger
+    description: When to collect the value of children node. Click here to see an example
+    type: string
+    default: onChange
+  - property: validateFirst
+    description: >-
+      Whether stop validate on first rule of error for this field. Will parallel
+      validate when parallel configured
+    type: boolean | parallel
+    default: 'false'
+  - property: validateStatus
+    description: >-
+      The validation status. If not provided, it will be generated by validation
+      rule. options: success warning error validating
+    type: string
+    default: '-'
+  - property: validateTrigger
+    description: When to validate the value of children node
+    type: string | string[]
+    default: onChange
+  - property: valuePropName
+    description: >-
+      Props of children node, for example, the prop of Switch is 'checked'. This
+      prop is an encapsulation of getValueProps, which will be invalid after
+      customizing getValueProps
+    type: string
+    default: value
+  - property: wrapperCol
+    description: >-
+      The layout for input controls, same as labelCol. You can set wrapperCol on
+      Form which will not affect nest Item. If both exists, use Item first
+    type: object
+    default: '-'
+  - property: children
+    description: Render function
+    type: >-
+      (fields: Field[], operation: { add, remove, move }, meta: { errors }) =>
+      React.ReactNode
+    default: '-'
+  - property: initialValue
+    description: >-
+      Config sub default value. Form initialValues get higher priority when
+      conflict
+    type: any[]
+    default: '-'
+  - property: name
+    description: Field name, support array
+    type: NamePath
+    default: '-'
+  - property: rules
+    description: >-
+      Validate rules, only support customize validator. Should work with
+      ErrorList
+    type: '{ validator, message }[]'
+    default: '-'
+  - property: add
+    description: add form item
+    type: '(defaultValue?: any, insertIndex?: number) => void'
+    default: insertIndex
+  - property: move
+    description: move form item
+    type: '(from: number, to: number) => void'
+    default: '-'
+  - property: remove
+    description: remove form item
+    type: '(index: number | number[]) => void'
+    default: number[]
+  - property: errors
+    description: Error list
+    type: ReactNode[]
+    default: '-'
+  - property: onFormChange
+    description: Triggered when a sub form field updates
+    type: 'function(formName: string, info: { changedFields, forms })'
+    default: '-'
+  - property: onFormFinish
+    description: Triggered when a sub form submits
+    type: 'function(formName: string, info: { values, forms })'
+    default: '-'
+  - property: getFieldError
+    description: Get the error messages by the field name
+    type: '(name: NamePath) => string[]'
+    default: ''
+  - property: getFieldInstance
+    description: Get field instance
+    type: '(name: NamePath) => any'
+    default: 4.4.0
+  - property: getFieldsError
+    description: Get the error messages by the fields name. Return as an array
+    type: '(nameList?: NamePath[]) => FieldError[]'
+    default: ''
+  - property: getFieldsValue
+    description: >-
+      Get values by a set of field names. Return according to the corresponding
+      structure. Default return mounted field value, but you can use
+      getFieldsValue(true) to get all values
+    type: >-
+      (nameList?: NamePath[], filterFunc?: (meta: { touched: boolean,
+      validating: boolean }) => boolean) => any
+    default: ''
+  - property: getFieldValue
+    description: Get the value by the field name
+    type: '(name: NamePath) => any'
+    default: ''
+  - property: isFieldsTouched
+    description: >-
+      Check if fields have been operated. Check if all fields is touched when
+      allTouched is true
+    type: '(nameList?: NamePath[], allTouched?: boolean) => boolean'
+    default: ''
+  - property: isFieldTouched
+    description: Check if a field has been operated
+    type: '(name: NamePath) => boolean'
+    default: ''
+  - property: isFieldValidating
+    description: Check field if is in validating
+    type: '(name: NamePath) => boolean'
+    default: ''
+  - property: resetFields
+    description: Reset fields to initialValues
+    type: '(fields?: NamePath[]) => void'
+    default: ''
+  - property: scrollToField
+    description: Scroll to field position
+    type: '(name: NamePath, options: [ScrollOptions]) => void'
+    default: ''
+  - property: setFields
+    description: Set fields status
+    type: '(fields: FieldData[]) => void'
+    default: ''
+  - property: setFieldValue
+    description: >-
+      Set fields value(Will directly pass to form store. If you do not want to
+      modify passed object, please clone first)
+    type: '(name: NamePath, value: any) => void'
+    default: 4.22.0
+  - property: setFieldsValue
+    description: >-
+      Set fields value(Will directly pass to form store. If you do not want to
+      modify passed object, please clone first). Use setFieldValue instead if
+      you want to only config single value in Form.List
+    type: (values) => void
+    default: ''
+  - property: submit
+    description: Submit the form. It's same as click submit button
+    type: () => void
+    default: ''
+  - property: validateFields
+    description: Validate fields
+    type: '(nameList?: NamePath[]) => Promise'
+    default: ''
+  - property: errors
+    description: Error messages
+    type: string[]
+    default: ''
+  - property: name
+    description: Field name path
+    type: NamePath[]
+    default: ''
+  - property: touched
+    description: Whether is operated
+    type: boolean
+    default: ''
+  - property: validating
+    description: Whether is in validating
+    type: boolean
+    default: ''
+  - property: value
+    description: Field value
+    type: any
+    default: ''
+  - property: defaultField
+    description: Validate rule for all array elements, valid when type is array
+    type: rule
+    default: ''
+  - property: enum
+    description: Match enum value. You need to set type to enum to enable this
+    type: any[]
+    default: ''
+  - property: fields
+    description: Validate rule for child elements, valid when type is array or object
+    type: Record<string, rule>
+    default: ''
+  - property: len
+    description: Length of string, number, array
+    type: number
+    default: ''
+  - property: max
+    description: 'type required: max length of string, number, array'
+    type: number
+    default: ''
+  - property: message
+    description: Error message. Will auto generate by template if not provided
+    type: string
+    default: ''
+  - property: min
+    description: 'type required: min length of string, number, array'
+    type: number
+    default: ''
+  - property: pattern
+    description: Regex pattern
+    type: RegExp
+    default: ''
+  - property: required
+    description: Required field
+    type: boolean
+    default: ''
+  - property: transform
+    description: Transform value to the rule before validation
+    type: (value) => any
+    default: ''
+  - property: type
+    description: Normally string |number |boolean |url | email. More type to ref here
+    type: string
+    default: ''
+  - property: validateTrigger
+    description: >-
+      Set validate trigger event. Must be the sub set of validateTrigger in
+      Form.Item
+    type: string | string[]
+    default: ''
+  - property: validator
+    description: Customize validation rule. Accept Promise as return. See example
+    type: (rule, value) => Promise
+    default: ''
+  - property: warningOnly
+    description: Warning only. Not block form submit
+    type: boolean
+    default: 4.17.0
+  - property: whitespace
+    description: 'Failed if only has whitespace, only work with type: ''string'' rule'
+    type: boolean
+    default: ''

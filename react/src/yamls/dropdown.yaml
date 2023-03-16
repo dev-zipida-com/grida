@@ -1,0 +1,98 @@
+dropdown:
+  - property: arrow
+    description: Whether the dropdown arrow should be visible
+    type: 'boolean | { pointAtCenter: boolean }'
+    default: 'false'
+  - property: autoAdjustOverflow
+    description: >-
+      Whether to adjust dropdown placement automatically when dropdown is off
+      screen
+    type: boolean
+    default: 'true'
+  - property: autoFocus
+    description: Focus element in overlay when opened
+    type: boolean
+    default: 'false'
+  - property: disabled
+    description: Whether the dropdown menu is disabled
+    type: boolean
+    default: '-'
+  - property: destroyPopupOnHide
+    description: Whether destroy dropdown when hidden
+    type: boolean
+    default: 'false'
+  - property: dropdownRender
+    description: Customize dropdown content
+    type: '(menus: ReactNode) => ReactNode'
+    default: '-'
+  - property: getPopupContainer
+    description: >-
+      To set the container of the dropdown menu. The default is to create a div
+      element in body, but you can reset it to the scrolling area and make a
+      relative reposition. Example on CodePen
+    type: '(triggerNode: HTMLElement) => HTMLElement'
+    default: () => document.body
+  - property: menu
+    description: The menu props
+    type: MenuProps
+    default: '-'
+  - property: overlayClassName
+    description: The class name of the dropdown root element
+    type: string
+    default: '-'
+  - property: overlayStyle
+    description: The style of the dropdown root element
+    type: CSSProperties
+    default: '-'
+  - property: placement
+    description: >-
+      Placement of popup menu: bottom bottomLeft bottomRight top topLeft
+      topRight
+    type: string
+    default: bottomLeft
+  - property: trigger
+    description: >-
+      The trigger mode which executes the dropdown action. Note that hover can't
+      be used on touchscreens
+    type: Array<click|hover|contextMenu>
+    default: '[hover]'
+  - property: open
+    description: >-
+      Whether the dropdown menu is currently open. Use visible under 4.23.0
+      (why?)
+    type: boolean
+    default: '-'
+  - property: onOpenChange
+    description: >-
+      Called when the open state is changed. Not trigger when hidden by click
+      item. Use onVisibleChange under 4.23.0 (why?)
+    type: '(open: boolean) => void'
+    default: '-'
+  - property: buttonsRender
+    description: Custom buttons inside Dropdown.Button
+    type: '(buttons: ReactNode[]) => ReactNode[]'
+    default: '-'
+  - property: loading
+    description: Set the loading status of button
+    type: 'boolean | { delay: number }'
+    default: 'false'
+  - property: danger
+    description: Set the danger status of button
+    type: boolean
+    default: '-'
+  - property: icon
+    description: Icon (appears on the right)
+    type: ReactNode
+    default: '-'
+  - property: size
+    description: Size of the button, the same as Button
+    type: string
+    default: default
+  - property: type
+    description: Type of the button, the same as Button
+    type: string
+    default: default
+  - property: onClick
+    description: 'The same as Button: called when you click the button on the left'
+    type: (event) => void
+    default: '-'

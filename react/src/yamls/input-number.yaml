@@ -1,0 +1,111 @@
+input-number:
+  - property: addonAfter
+    description: The label text displayed after (on the right side of) the input field
+    type: ReactNode
+    default: '-'
+  - property: addonBefore
+    description: The label text displayed before (on the left side of) the input field
+    type: ReactNode
+    default: '-'
+  - property: autoFocus
+    description: If get focus when component mounted
+    type: boolean
+    default: 'false'
+  - property: bordered
+    description: Whether has border style
+    type: boolean
+    default: 'true'
+  - property: controls
+    description: Whether to show +- controls, or set custom arrows icon
+    type: 'boolean | { upIcon?: React.ReactNode; downIcon?: React.ReactNode; }'
+    default: '-'
+  - property: decimalSeparator
+    description: Decimal separator
+    type: string
+    default: '-'
+  - property: defaultValue
+    description: The initial value
+    type: number
+    default: '-'
+  - property: disabled
+    description: If disable the input
+    type: boolean
+    default: 'false'
+  - property: formatter
+    description: Specifies the format of the value presented
+    type: >-
+      function(value: number | string, info: { userTyping: boolean, input:
+      string }): string
+    default: '-'
+  - property: keyboard
+    description: If enable keyboard behavior
+    type: boolean
+    default: 'true'
+  - property: max
+    description: The max value
+    type: number
+    default: Number.MAX_SAFE_INTEGER
+  - property: min
+    description: The min value
+    type: number
+    default: Number.MIN_SAFE_INTEGER
+  - property: parser
+    description: Specifies the value extracted from formatter
+    type: 'function(string): number'
+    default: '-'
+  - property: precision
+    description: The precision of input value. Will use formatter when config of formatter
+    type: number
+    default: '-'
+  - property: readOnly
+    description: If readonly the input
+    type: boolean
+    default: 'false'
+  - property: status
+    description: Set validation status
+    type: '''error'' | ''warning'''
+    default: '-'
+  - property: prefix
+    description: The prefix icon for the Input
+    type: ReactNode
+    default: '-'
+  - property: size
+    description: The height of input box
+    type: large | middle | small
+    default: '-'
+  - property: step
+    description: >-
+      The number to which the current value is increased or decreased. It can be
+      an integer or decimal
+    type: number | string
+    default: '1'
+  - property: stringMode
+    description: >-
+      Set value as string to support high precision decimals. Will return string
+      value by onChange
+    type: boolean
+    default: 'false'
+  - property: value
+    description: The current value
+    type: number
+    default: '-'
+  - property: onChange
+    description: The callback triggered when the value is changed
+    type: 'function(value: number | string | null)'
+    default: '-'
+  - property: onPressEnter
+    description: The callback function that is triggered when Enter key is pressed
+    type: function(e)
+    default: '-'
+  - property: onStep
+    description: The callback function that is triggered when click up or down buttons
+    type: '(value: number, info: { offset: number, type: ''up'' | ''down'' }) => void'
+    default: '-'
+  - property: blur()
+    description: Remove focus
+    type: ''
+    default: ''
+  - property: focus()
+    description: Get focus
+    type: ''
+    default: ''

@@ -1,0 +1,22 @@
+.container {
+  width: 78px;
+}
+.inputnumber-content {
+  background-color: var(--darkmode-text-title-primary);
+  border: 1px solid var(--text-disabled-divider);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  align-self: stretch;
+}
+.inputnumber-text {
+  padding-left: 3px;
+  width: 100%;
+  color: var(--text-title);
+  flex: 1;
+  font-family: var(--body-p2-regular-family);
+  font-size: var(--body-p2-regular-size);
+  font-weight: var(--body-p2-regular-weight);
+  line-height: var(--body-p2-regular-line-height);
+}

@@ -1,0 +1,49 @@
+popconfirm:
+  - property: cancelButtonProps
+    description: The cancel button props
+    type: ButtonProps
+    default: '-'
+  - property: cancelText
+    description: The text of the Cancel button
+    type: string
+    default: Cancel
+  - property: disabled
+    description: Whether show popconfirm when click its childrenNode
+    type: boolean
+    default: 'false'
+  - property: icon
+    description: Customize icon of confirmation
+    type: ReactNode
+    default: <ExclamationCircle />
+  - property: okButtonProps
+    description: The ok button props
+    type: ButtonProps
+    default: '-'
+  - property: okText
+    description: The text of the Confirm button
+    type: string
+    default: OK
+  - property: okType
+    description: Button type of the Confirm button
+    type: string
+    default: primary
+  - property: showCancel
+    description: Show cancel button
+    type: boolean
+    default: 'true'
+  - property: title
+    description: The title of the confirmation box
+    type: ReactNode | () => ReactNode
+    default: '-'
+  - property: description
+    description: The description of the confirmation box title
+    type: ReactNode | () => ReactNode
+    default: '-'
+  - property: onCancel
+    description: A callback of cancel
+    type: function(e)
+    default: '-'
+  - property: onConfirm
+    description: A callback of confirmation
+    type: function(e)
+    default: '-'

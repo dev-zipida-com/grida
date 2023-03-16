@@ -1,0 +1,243 @@
+tree:
+  - property: allowDrop
+    description: Whether to allow dropping on the node
+    type: ({ dropNode, dropPosition }) => boolean
+    default: '-'
+  - property: autoExpandParent
+    description: Whether to automatically expand a parent treeNode
+    type: boolean
+    default: 'false'
+  - property: blockNode
+    description: Whether treeNode fill remaining horizontal space
+    type: boolean
+    default: 'false'
+  - property: checkable
+    description: Add a Checkbox before the treeNodes
+    type: boolean
+    default: 'false'
+  - property: checkedKeys
+    description: >-
+      (Controlled) Specifies the keys of the checked treeNodes (PS: When this
+      specifies the key of a treeNode which is also a parent treeNode, all the
+      children treeNodes of will be checked; and vice versa, when it specifies
+      the key of a treeNode which is a child treeNode, its parent treeNode will
+      also be checked. When checkable and checkStrictly is true, its object has
+      checked and halfChecked property. Regardless of whether the child or
+      parent treeNode is checked, they won't impact each other
+    type: 'string[] | {checked: string[], halfChecked: string[]}'
+    default: '[]'
+  - property: checkStrictly
+    description: >-
+      Check treeNode precisely; parent treeNode and children treeNodes are not
+      associated
+    type: boolean
+    default: 'false'
+  - property: defaultCheckedKeys
+    description: Specifies the keys of the default checked treeNodes
+    type: string[]
+    default: '[]'
+  - property: defaultExpandAll
+    description: Whether to expand all treeNodes by default
+    type: boolean
+    default: 'false'
+  - property: defaultExpandedKeys
+    description: Specify the keys of the default expanded treeNodes
+    type: string[]
+    default: '[]'
+  - property: defaultExpandParent
+    description: If auto expand parent treeNodes when init
+    type: boolean
+    default: 'true'
+  - property: defaultSelectedKeys
+    description: Specifies the keys of the default selected treeNodes
+    type: string[]
+    default: '[]'
+  - property: disabled
+    description: Whether disabled the tree
+    type: boolean
+    default: 'false'
+  - property: draggable
+    description: >-
+      Specifies whether this Tree or the node is draggable. Use icon: false to
+      disable drag handler icon
+    type: >-
+      boolean | ((node: DataNode) => boolean) | { icon?: React.ReactNode |
+      false, nodeDraggable?: (node: DataNode) => boolean }
+    default: 'false'
+  - property: expandedKeys
+    description: (Controlled) Specifies the keys of the expanded treeNodes
+    type: string[]
+    default: '[]'
+  - property: fieldNames
+    description: Customize node title, key, children field name
+    type: object
+    default: '{ title: title, key: key, children: children }'
+  - property: filterTreeNode
+    description: >-
+      Defines a function to filter (highlight) treeNodes. When the function
+      returns true, the corresponding treeNode will be highlighted
+    type: function(node)
+    default: '-'
+  - property: height
+    description: >-
+      Config virtual scroll height. Will not support horizontal scroll when
+      enable this
+    type: number
+    default: '-'
+  - property: icon
+    description: Customize treeNode icon
+    type: ReactNode | (props) => ReactNode
+    default: '-'
+  - property: loadData
+    description: Load data asynchronously
+    type: function(node)
+    default: '-'
+  - property: loadedKeys
+    description: (Controlled) Set loaded tree nodes. Need work with loadData
+    type: string[]
+    default: '[]'
+  - property: multiple
+    description: Allows selecting multiple treeNodes
+    type: boolean
+    default: 'false'
+  - property: rootClassName
+    description: ClassName on the root element
+    type: string
+    default: '-'
+  - property: rootStyle
+    description: Style on the root element
+    type: CSSProperties
+    default: '-'
+  - property: selectable
+    description: Whether can be selected
+    type: boolean
+    default: 'true'
+  - property: selectedKeys
+    description: (Controlled) Specifies the keys of the selected treeNodes
+    type: string[]
+    default: '-'
+  - property: showIcon
+    description: >-
+      Shows the icon before a TreeNode's title. There is no default style; you
+      must set a custom style for it if set to true
+    type: boolean
+    default: 'false'
+  - property: showLine
+    description: Shows a connecting line
+    type: >-
+      boolean | {showLeafIcon: boolean | ReactNode | ((props: AntTreeNodeProps)
+      => ReactNode)}
+    default: 'false'
+  - property: switcherIcon
+    description: Customize collapse/expand icon of tree node
+    type: 'ReactNode | ((props: AntTreeNodeProps) => ReactNode)'
+    default: '-'
+  - property: titleRender
+    description: Customize tree node title render
+    type: (nodeData) => ReactNode
+    default: '-'
+  - property: treeData
+    description: >-
+      The treeNodes data Array, if set it then you need not to construct
+      children TreeNode. (key should be unique across the whole array)
+    type: array<{ key, title, children, [disabled, selectable] }>
+    default: '-'
+  - property: virtual
+    description: Disable virtual scroll when set to false
+    type: boolean
+    default: 'true'
+  - property: onCheck
+    description: Callback function for when the onCheck event occurs
+    type: >-
+      function(checkedKeys, e:{checked: bool, checkedNodes, node, event,
+      halfCheckedKeys})
+    default: '-'
+  - property: onDragEnd
+    description: Callback function for when the onDragEnd event occurs
+    type: function({event, node})
+    default: '-'
+  - property: onDragEnter
+    description: Callback function for when the onDragEnter event occurs
+    type: function({event, node, expandedKeys})
+    default: '-'
+  - property: onDragLeave
+    description: Callback function for when the onDragLeave event occurs
+    type: function({event, node})
+    default: '-'
+  - property: onDragOver
+    description: Callback function for when the onDragOver event occurs
+    type: function({event, node})
+    default: '-'
+  - property: onDragStart
+    description: Callback function for when the onDragStart event occurs
+    type: function({event, node})
+    default: '-'
+  - property: onDrop
+    description: Callback function for when the onDrop event occurs
+    type: function({event, node, dragNode, dragNodesKeys})
+    default: '-'
+  - property: onExpand
+    description: Callback function for when a treeNode is expanded or collapsed
+    type: 'function(expandedKeys, {expanded: bool, node})'
+    default: '-'
+  - property: onLoad
+    description: Callback function for when a treeNode is loaded
+    type: function(loadedKeys, {event, node})
+    default: '-'
+  - property: onRightClick
+    description: Callback function for when the user right clicks a treeNode
+    type: function({event, node})
+    default: '-'
+  - property: onSelect
+    description: Callback function for when the user clicks a treeNode
+    type: 'function(selectedKeys, e:{selected: bool, selectedNodes, node, event})'
+    default: '-'
+  - property: checkable
+    description: When Tree is checkable, set TreeNode display Checkbox or not
+    type: boolean
+    default: '-'
+  - property: disableCheckbox
+    description: Disables the checkbox of the treeNode
+    type: boolean
+    default: 'false'
+  - property: disabled
+    description: Disables the treeNode
+    type: boolean
+    default: 'false'
+  - property: icon
+    description: >-
+      Customize icon. When you pass component, whose render will receive full
+      TreeNode props as component props
+    type: ReactNode | (props) => ReactNode
+    default: '-'
+  - property: isLeaf
+    description: >-
+      Determines if this is a leaf node(effective when loadData is specified).
+      false will force trade TreeNode as a parent node
+    type: boolean
+    default: '-'
+  - property: key
+    description: >-
+      Used with (default)ExpandedKeys / (default)CheckedKeys /
+      (default)SelectedKeys. P.S.: It must be unique in all of treeNodes of the
+      tree
+    type: string
+    default: (internal calculated position of treeNode)
+  - property: selectable
+    description: Set whether the treeNode can be selected
+    type: boolean
+    default: 'true'
+  - property: title
+    description: Title
+    type: ReactNode
+    default: '---'
+  - property: expandAction
+    description: 'Directory open logic, optional: false | click | doubleClick'
+    type: string | boolean
+    default: click
+  - property: >-
+      scrollTo({ key: string | number; align?: 'top' | 'bottom' | 'auto';
+      offset?: number })
+    description: Scroll to key item in virtual scroll
+    type: ''
+    default: ''

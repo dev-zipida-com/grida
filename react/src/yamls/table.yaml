@@ -1,0 +1,426 @@
+table:
+  - property: bordered
+    description: Whether to show all table borders
+    type: boolean
+    default: 'false'
+  - property: columns
+    description: Columns of table
+    type: ColumnsType[]
+    default: '-'
+  - property: components
+    description: Override default table elements
+    type: TableComponents
+    default: '-'
+  - property: dataSource
+    description: Data record array to be displayed
+    type: object[]
+    default: '-'
+  - property: expandable
+    description: Config expandable content
+    type: expandable
+    default: '-'
+  - property: footer
+    description: Table footer renderer
+    type: function(currentPageData)
+    default: '-'
+  - property: getPopupContainer
+    description: The render container of dropdowns in table
+    type: (triggerNode) => HTMLElement
+    default: () => TableHtmlElement
+  - property: loading
+    description: Loading status of table
+    type: boolean | Spin Props
+    default: 'false'
+  - property: locale
+    description: The i18n text including filter, sort, empty text, etc
+    type: object
+    default: Default Value
+  - property: pagination
+    description: >-
+      Config of pagination. You can ref table pagination config or full
+      pagination document, hide it by setting it to false
+    type: object | false
+    default: '-'
+  - property: rowClassName
+    description: Row's className
+    type: 'function(record, index): string'
+    default: '-'
+  - property: rowKey
+    description: Row's unique key, could be a string or function that returns a string
+    type: 'string | function(record): string'
+    default: key
+  - property: rowSelection
+    description: Row selection config
+    type: object
+    default: '-'
+  - property: scroll
+    description: Whether the table can be scrollable, config
+    type: object
+    default: '-'
+  - property: showHeader
+    description: Whether to show table header
+    type: boolean
+    default: 'true'
+  - property: showSorterTooltip
+    description: >-
+      The header show next sorter direction tooltip. It will be set as the
+      property of Tooltip if its type is object
+    type: boolean | Tooltip props
+    default: 'true'
+  - property: size
+    description: Size of table
+    type: large | middle | small
+    default: large
+  - property: sortDirections
+    description: Supported sort way, could be ascend, descend
+    type: Array
+    default: '[ascend, descend]'
+  - property: sticky
+    description: Set sticky header and scroll bar
+    type: >-
+      boolean | {offsetHeader?: number, offsetScroll?: number, getContainer?: ()
+      => HTMLElement}
+    default: '-'
+  - property: summary
+    description: Summary content
+    type: (currentData) => ReactNode
+    default: '-'
+  - property: tableLayout
+    description: The table-layout attribute of table element
+    type: '- | auto | fixed'
+    default: '-fixed when header/columns are fixed, or using column.ellipsis'
+  - property: title
+    description: Table title renderer
+    type: function(currentPageData)
+    default: '-'
+  - property: onChange
+    description: Callback executed when pagination, filters or sorter is changed
+    type: >-
+      function(pagination, filters, sorter, extra: { currentDataSource: [],
+      action: paginate | sort | filter })
+    default: '-'
+  - property: onHeaderRow
+    description: Set props on per header row
+    type: function(columns, index)
+    default: '-'
+  - property: onRow
+    description: Set props on per row
+    type: function(record, index)
+    default: '-'
+  - property: align
+    description: The specify which way that column is aligned
+    type: left | right | center
+    default: left
+  - property: className
+    description: The className of this column
+    type: string
+    default: '-'
+  - property: colSpan
+    description: Span of this column's title
+    type: number
+    default: '-'
+  - property: dataIndex
+    description: Display field of the data record, support nest path by string array
+    type: string | string[]
+    default: '-'
+  - property: defaultFilteredValue
+    description: Default filtered values
+    type: string[]
+    default: '-'
+  - property: filterResetToDefaultFilteredValue
+    description: click the reset button, whether to restore the default filter
+    type: boolean
+    default: 'false'
+  - property: defaultSortOrder
+    description: Default order of sorted values
+    type: ascend | descend
+    default: '-'
+  - property: ellipsis
+    description: >-
+      The ellipsis cell content, not working with sorter and filters for
+      now.tableLayout would be fixed when ellipsis is true or { showTitle?:
+      boolean }
+    type: 'boolean | {showTitle?: boolean }'
+    default: 'false'
+  - property: filterDropdown
+    description: Customized filter overlay
+    type: 'ReactNode | (props: FilterDropdownProps) => ReactNode'
+    default: '-'
+  - property: filterDropdownOpen
+    description: Whether filterDropdown is visible
+    type: boolean
+    default: '-'
+  - property: filtered
+    description: Whether the dataSource is filtered
+    type: boolean
+    default: 'false'
+  - property: filteredValue
+    description: Controlled filtered value, filter icon will highlight
+    type: string[]
+    default: '-'
+  - property: filterIcon
+    description: Customized filter icon
+    type: 'ReactNode | (filtered: boolean) => ReactNode'
+    default: '-'
+  - property: filterMultiple
+    description: Whether multiple filters can be selected
+    type: boolean
+    default: 'true'
+  - property: filterMode
+    description: To specify the filter interface
+    type: '''menu'' | ''tree'''
+    default: '''menu'''
+  - property: filterSearch
+    description: Whether to be searchable for filter menu
+    type: boolean | function(input, record):boolean
+    default: 'false'
+  - property: filters
+    description: Filter menu config
+    type: object[]
+    default: '-'
+  - property: fixed
+    description: '(IE not support) Set column to be fixed: true(same as left) ''left'' ''right'''
+    type: boolean | string
+    default: 'false'
+  - property: key
+    description: >-
+      Unique key of this column, you can ignore this prop if you've set a unique
+      dataIndex
+    type: string
+    default: '-'
+  - property: render
+    description: Renderer of the table cell. The return value should be a ReactNode
+    type: function(text, record, index) {}
+    default: '-'
+  - property: responsive
+    description: >-
+      The list of breakpoints at which to display this column. Always visible if
+      not set
+    type: Breakpoint[]
+    default: '-'
+  - property: rowScope
+    description: Set scope attribute for all cells in this column
+    type: row | rowgroup
+    default: '-'
+  - property: shouldCellUpdate
+    description: Control cell render logic
+    type: (record, prevRecord) => boolean
+    default: '-'
+  - property: showSorterTooltip
+    description: >-
+      If header show next sorter direction tooltip, override showSorterTooltip
+      in table
+    type: boolean | Tooltip props
+    default: 'true'
+  - property: sortDirections
+    description: >-
+      Supported sort way, override sortDirections in Table, could be ascend,
+      descend
+    type: Array
+    default: '[ascend, descend]'
+  - property: sorter
+    description: >-
+      Sort function for local sort, see Array.sort's compareFunction. If you
+      need sort buttons only, set to true
+    type: function | boolean
+    default: '-'
+  - property: sortOrder
+    description: 'Order of sorted values: ascend descend null'
+    type: ascend | descend | null
+    default: '-'
+  - property: title
+    description: Title of this column
+    type: ReactNode | ({ sortOrder, sortColumn, filters }) => ReactNode
+    default: '-'
+  - property: width
+    description: Width of this column (width not working?)
+    type: string | number
+    default: '-'
+  - property: onCell
+    description: Set props on per cell
+    type: function(record, rowIndex)
+    default: '-'
+  - property: onFilter
+    description: Function that determines if the row is displayed when filtered
+    type: function(value, record) => boolean
+    default: '-'
+  - property: onFilterDropdownOpenChange
+    description: Callback executed when filterDropdownOpen is changed
+    type: function(visible) {}
+    default: '-'
+  - property: onHeaderCell
+    description: Set props on per header cell
+    type: function(column)
+    default: '-'
+  - property: title
+    description: Title of the column group
+    type: ReactNode
+    default: '-'
+  - property: position
+    description: >-
+      Specify the position of Pagination, could betopLeft | topCenter | topRight
+      |bottomLeft | bottomCenter | bottomRight
+    type: Array
+    default: '[bottomRight]'
+  - property: childrenColumnName
+    description: The column contains children to display
+    type: string
+    default: children
+  - property: columnTitle
+    description: Set the title of the expand column
+    type: ReactNode
+    default: '-'
+  - property: columnWidth
+    description: Set the width of the expand column
+    type: string | number
+    default: '-'
+  - property: defaultExpandAllRows
+    description: Expand all rows initially
+    type: boolean
+    default: 'false'
+  - property: defaultExpandedRowKeys
+    description: Initial expanded row keys
+    type: string[]
+    default: '-'
+  - property: expandedRowClassName
+    description: Expanded row's className
+    type: 'function(record, index, indent): string'
+    default: '-'
+  - property: expandedRowKeys
+    description: Current expanded row keys
+    type: string[]
+    default: '-'
+  - property: expandedRowRender
+    description: Expanded container render for each row
+    type: 'function(record, index, indent, expanded): ReactNode'
+    default: '-'
+  - property: expandIcon
+    description: Customize row expand Icon. Ref example
+    type: 'function(props): ReactNode'
+    default: '-'
+  - property: expandRowByClick
+    description: Whether to expand row by clicking anywhere in the whole row
+    type: boolean
+    default: 'false'
+  - property: fixed
+    description: Whether the expansion icon is fixed. Optional true left right
+    type: boolean | string
+    default: 'false'
+  - property: indentSize
+    description: Indent size in pixels of tree data
+    type: number
+    default: '15'
+  - property: rowExpandable
+    description: Enable row can be expandable
+    type: (record) => boolean
+    default: '-'
+  - property: showExpandColumn
+    description: Show expand column
+    type: boolean
+    default: 'true'
+  - property: onExpand
+    description: Callback executed when the row expand icon is clicked
+    type: function(expanded, record)
+    default: '-'
+  - property: onExpandedRowsChange
+    description: Callback executed when the expanded rows change
+    type: function(expandedRows)
+    default: '-'
+  - property: checkStrictly
+    description: Check table row precisely; parent row and children rows are not associated
+    type: boolean
+    default: 'true'
+  - property: columnTitle
+    description: Set the title of the selection column
+    type: ReactNode
+    default: '-'
+  - property: columnWidth
+    description: Set the width of the selection column
+    type: string | number
+    default: 32px
+  - property: fixed
+    description: Fixed selection column on the left
+    type: boolean
+    default: '-'
+  - property: getCheckboxProps
+    description: Get Checkbox or Radio props
+    type: function(record)
+    default: '-'
+  - property: hideSelectAll
+    description: Hide the selectAll checkbox and custom selection
+    type: boolean
+    default: 'false'
+  - property: preserveSelectedRowKeys
+    description: Keep selection key even when it removed from dataSource
+    type: boolean
+    default: '-'
+  - property: renderCell
+    description: Renderer of the table cell. Same as render in column
+    type: function(checked, record, index, originNode) {}
+    default: '-'
+  - property: selectedRowKeys
+    description: Controlled selected row keys
+    type: string[] | number[]
+    default: '[]'
+  - property: selections
+    description: Custom selection config, only displays default selections when set to true
+    type: object[] | boolean
+    default: '-'
+  - property: type
+    description: checkbox or radio
+    type: checkbox | radio
+    default: checkbox
+  - property: onChange
+    description: Callback executed when selected rows change
+    type: 'function(selectedRowKeys, selectedRows, info: { type })'
+    default: '-'
+  - property: onSelect
+    description: Callback executed when select/deselect one row
+    type: function(record, selected, selectedRows, nativeEvent)
+    default: '-'
+  - property: onSelectAll
+    description: Callback executed when select/deselect all rows
+    type: function(selected, selectedRows, changeRows)
+    default: '-'
+  - property: onSelectInvert
+    description: Callback executed when row selection is inverted
+    type: function(selectedRowKeys)
+    default: '-'
+  - property: onSelectNone
+    description: Callback executed when row selection is cleared
+    type: function()
+    default: '-'
+  - property: onSelectMultiple
+    description: Callback executed when row selection is changed by pressing shift
+    type: function(selected, selectedRows, changeRows)
+    default: '-'
+  - property: scrollToFirstRowOnChange
+    description: >-
+      Whether to scroll to the top of the table when paging, sorting, filtering
+      changes
+    type: boolean
+    default: '-'
+  - property: x
+    description: >-
+      Set horizontal scrolling, can also be used to specify the width of the
+      scroll area, could be number, percent value, true and 'max-content'
+    type: string | number | true
+    default: '-'
+  - property: 'y'
+    description: >-
+      Set vertical scrolling, can also be used to specify the height of the
+      scroll area, could be string or number
+    type: string | number
+    default: '-'
+  - property: key
+    description: Unique key of this selection
+    type: string
+    default: '-'
+  - property: text
+    description: Display text of this selection
+    type: ReactNode
+    default: '-'
+  - property: onSelect
+    description: Callback executed when this selection is clicked
+    type: function(changeableRowKeys)
+    default: '-'

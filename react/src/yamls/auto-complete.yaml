@@ -1,0 +1,118 @@
+auto-complete:
+  - property: allowClear
+    description: Show clear button
+    type: boolean
+    default: 'false'
+  - property: autoFocus
+    description: If get focus when component mounted
+    type: boolean
+    default: 'false'
+  - property: backfill
+    description: If backfill selected item the input when using keyboard
+    type: boolean
+    default: 'false'
+  - property: children (for customize input element)
+    description: Customize input element
+    type: HTMLInputElement | HTMLTextAreaElement | React.ReactElement<InputProps>
+    default: <Input />
+  - property: children (for dataSource)
+    description: Data source to auto complete
+    type: React.ReactElement<OptionProps> | Array<React.ReactElement<OptionProps>>
+    default: '-'
+  - property: defaultActiveFirstOption
+    description: Whether active first option by default
+    type: boolean
+    default: 'true'
+  - property: defaultOpen
+    description: Initial open state of dropdown
+    type: boolean
+    default: '-'
+  - property: defaultValue
+    description: Initial selected option
+    type: string
+    default: '-'
+  - property: disabled
+    description: Whether disabled select
+    type: boolean
+    default: 'false'
+  - property: popupClassName
+    description: The className of dropdown menu
+    type: string
+    default: '-'
+  - property: dropdownMatchSelectWidth
+    description: >-
+      Determine whether the dropdown menu and the select input are the same
+      width. Default set min-width same as input. Will ignore when value less
+      than select width. false will disable virtual scroll
+    type: boolean | number
+    default: 'true'
+  - property: filterOption
+    description: >-
+      If true, filter options by input, if function, filter options against it.
+      The function will receive two arguments, inputValue and option, if the
+      function returns true, the option will be included in the filtered set;
+      Otherwise, it will be excluded
+    type: boolean | function(inputValue, option)
+    default: 'true'
+  - property: notFoundContent
+    description: Specify content to show when no result matches
+    type: string
+    default: Not Found
+  - property: open
+    description: Controlled open state of dropdown
+    type: boolean
+    default: '-'
+  - property: options
+    description: Select options. Will get better perf than jsx definition
+    type: '{ label, value }[]'
+    default: '-'
+  - property: placeholder
+    description: The placeholder of input
+    type: string
+    default: '-'
+  - property: status
+    description: Set validation status
+    type: '''error'' | ''warning'''
+    default: '-'
+  - property: value
+    description: Selected option
+    type: string
+    default: '-'
+  - property: onBlur
+    description: Called when leaving the component
+    type: function()
+    default: '-'
+  - property: onChange
+    description: Called when selecting an option or changing an input value
+    type: function(value)
+    default: '-'
+  - property: onDropdownVisibleChange
+    description: Call when dropdown open
+    type: function(open)
+    default: '-'
+  - property: onFocus
+    description: Called when entering the component
+    type: function()
+    default: '-'
+  - property: onSearch
+    description: Called when searching items
+    type: function(value)
+    default: '-'
+  - property: onSelect
+    description: >-
+      Called when a option is selected. param is option's value and option
+      instance
+    type: function(value, option)
+    default: '-'
+  - property: onClear
+    description: Called when clear
+    type: function
+    default: '-'
+  - property: blur()
+    description: Remove focus
+    type: ''
+    default: ''
+  - property: focus()
+    description: Get focus
+    type: ''
+    default: ''

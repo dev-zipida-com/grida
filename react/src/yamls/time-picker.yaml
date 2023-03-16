@@ -1,0 +1,141 @@
+time-picker:
+  - property: allowClear
+    description: Whether allow clearing text
+    type: boolean
+    default: 'true'
+  - property: autoFocus
+    description: If get focus when component mounted
+    type: boolean
+    default: 'false'
+  - property: bordered
+    description: Whether has border style
+    type: boolean
+    default: 'true'
+  - property: className
+    description: The className of picker
+    type: string
+    default: '-'
+  - property: clearIcon
+    description: The custom clear icon
+    type: ReactNode
+    default: '-'
+  - property: clearText
+    description: The clear tooltip of icon
+    type: string
+    default: clear
+  - property: defaultValue
+    description: To set default time
+    type: dayjs
+    default: '-'
+  - property: disabled
+    description: Determine whether the TimePicker is disabled
+    type: boolean
+    default: 'false'
+  - property: disabledTime
+    description: To specify the time that cannot be selected
+    type: DisabledTime
+    default: '-'
+  - property: format
+    description: To set the time format
+    type: string
+    default: HH:mm:ss
+  - property: getPopupContainer
+    description: >-
+      To set the container of the floating layer, while the default is to create
+      a div element in body
+    type: function(trigger)
+    default: '-'
+  - property: hideDisabledOptions
+    description: Whether hide the options that can not be selected
+    type: boolean
+    default: 'false'
+  - property: hourStep
+    description: Interval between hours in picker
+    type: number
+    default: '1'
+  - property: inputReadOnly
+    description: >-
+      Set the readonly attribute of the input tag (avoids virtual keyboard on
+      touch devices)
+    type: boolean
+    default: 'false'
+  - property: minuteStep
+    description: Interval between minutes in picker
+    type: number
+    default: '1'
+  - property: open
+    description: Whether to popup panel
+    type: boolean
+    default: 'false'
+  - property: placeholder
+    description: Display when there's no value
+    type: string | [string, string]
+    default: Select a time
+  - property: placement
+    description: The position where the selection box pops up
+    type: bottomLeft bottomRight topLeft topRight
+    default: bottomLeft
+  - property: popupClassName
+    description: The className of panel
+    type: string
+    default: '-'
+  - property: popupStyle
+    description: The style of panel
+    type: CSSProperties
+    default: '-'
+  - property: renderExtraFooter
+    description: Called from time picker panel to render some addon to its bottom
+    type: () => ReactNode
+    default: '-'
+  - property: secondStep
+    description: Interval between seconds in picker
+    type: number
+    default: '1'
+  - property: showNow
+    description: Whether to show Now button on panel
+    type: boolean
+    default: '-'
+  - property: status
+    description: Set validation status
+    type: '''error'' | ''warning'' | ''success'' | ''validating'''
+    default: '-'
+  - property: suffixIcon
+    description: The custom suffix icon
+    type: ReactNode
+    default: '-'
+  - property: use12Hours
+    description: Display as 12 hours format, with default format h:mm:ss a
+    type: boolean
+    default: 'false'
+  - property: value
+    description: To set time
+    type: dayjs
+    default: '-'
+  - property: onChange
+    description: A callback function, can be executed when the selected time is changing
+    type: 'function(time: dayjs, timeString: string): void'
+    default: '-'
+  - property: onOpenChange
+    description: A callback function which will be called while panel opening/closing
+    type: '(open: boolean) => void'
+    default: '-'
+  - property: onSelect
+    description: A callback function, executes when a value is selected
+    type: 'function(time: dayjs): void'
+    default: '-'
+  - property: blur()
+    description: Remove focus
+    type: ''
+    default: ''
+  - property: focus()
+    description: Get focus
+    type: ''
+    default: ''
+  - property: disabledTime
+    description: To specify the time that cannot be selected
+    type: RangeDisabledTime
+    default: '-'
+  - property: order
+    description: Order start and end time
+    type: boolean
+    default: 'true'

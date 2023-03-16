@@ -1,0 +1,21 @@
+result:
+  - property: extra
+    description: Operating area
+    type: ReactNode
+    default: '-'
+  - property: icon
+    description: Custom back icon
+    type: ReactNode
+    default: '-'
+  - property: status
+    description: Result status, decide icons and colors
+    type: success | error | info | warning | 404 | 403 | 500
+    default: info
+  - property: subTitle
+    description: The subTitle
+    type: ReactNode
+    default: '-'
+  - property: title
+    description: The title
+    type: ReactNode
+    default: '-'

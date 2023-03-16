@@ -1,0 +1,282 @@
+/* This is the project stylesheet */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+input,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+a {
+  text-decoration: none;
+}
+
+select{
+  appearance: none;
+  -webkit-appearance: none; /* 사파리, 크롬 하위버전용 */
+  -moz-appearance: none; /* 사파리, 크롬 하위버전용 */
+  border: 3px solid #666;
+  padding: 0 10px;
+  box-sizing: border-box;
+  background-image: url('./assets/arrow-icon.svg');
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+}
+select::-ms-expand{ display: none; } /* 익스플로러용 */
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* This is the project stylesheet */
+
+:root {
+  /* Colors */
+  --background-disabled: rgba(245, 245, 245, 1);
+  --background-error: rgba(252, 201, 204, 0.25);
+  --background-primary: rgba(246, 246, 246, 1);
+  --background-processing: rgba(47, 128, 237, 0.1);
+  --background-success: rgba(71, 184, 129, 0.1);
+  --background-tag: rgba(140, 62, 255, 0.1);
+  --background-warning: rgba(242, 170, 82, 0.1);
+  --darkmode-text-secondary: rgba(255, 255, 255, 0.8);
+  --darkmode-text-title-primary: rgba(255, 255, 255, 1);
+  --disabled-error: rgba(252, 201, 204, 1);
+  --disabled-theme: rgba(238, 226, 255, 1);
+  --medium-slate-blue: rgba(152, 107, 255, 1);
+  --status-error: rgba(242, 100, 96, 1);
+  --status-processing: rgba(47, 128, 237, 1);
+  --status-success: rgba(71, 184, 129, 1);
+  --status-warning: rgba(242, 170, 82, 1);
+  --text-disabled-divider: rgba(222, 222, 222, 1);
+  --text-primary: rgba(0, 0, 0, 0.6);
+  --text-secondary: rgba(0, 0, 0, 0.38);
+  --text-title: rgba(0, 0, 0, 0.87);
+  --theme-active: rgba(76, 4, 184, 1);
+  --theme-default: rgba(140, 62, 255, 1);
+  --theme-focus: rgba(124, 53, 229, 1);
+  --theme-focus-stroke: rgba(221, 197, 255, 1);
+  --theme-hover: rgba(166, 106, 255, 1);
+  --transparent-black: rgba(0, 0, 0, 0.5);
+
+  /* Typographies */
+  /* body-p1-bold */
+  --body-p1-bold-family: "Pretendard";
+  --body-p1-bold-size: 16px;
+  --body-p1-bold-weight: 700;
+  --body-p1-bold-line-height: 24px;
+
+  /* body-p1-medium */
+  --body-p1-medium-family: "Pretendard";
+  --body-p1-medium-size: 16px;
+  --body-p1-medium-weight: 500;
+  --body-p1-medium-line-height: 24px;
+
+  /* body-p1-regular */
+  --body-p1-regular-family: "Pretendard";
+  --body-p1-regular-size: 16px;
+  --body-p1-regular-weight: 400;
+  --body-p1-regular-line-height: 24px;
+
+  /* body-p2-bold */
+  --body-p2-bold-family: "Pretendard";
+  --body-p2-bold-size: 14px;
+  --body-p2-bold-weight: 700;
+  --body-p2-bold-line-height: 21px;
+
+  /* body-p2-medium */
+  --body-p2-medium-family: "Pretendard";
+  --body-p2-medium-size: 14px;
+  --body-p2-medium-weight: 500;
+  --body-p2-medium-line-height: 21px;
+
+  /* body-p2-regular */
+  --body-p2-regular-family: "Pretendard";
+  --body-p2-regular-size: 14px;
+  --body-p2-regular-weight: 400;
+  --body-p2-regular-line-height: 21px;
+
+  /* caption-regular */
+  --caption-regular-family: "Pretendard";
+  --caption-regular-size: 12px;
+  --caption-regular-weight: 400;
+  --caption-regular-line-height: 16px;
+
+  /* heading-h1-bold */
+  --heading-h1-bold-family: "Pretendard";
+  --heading-h1-bold-size: 40px;
+  --heading-h1-bold-weight: 700;
+  --heading-h1-bold-line-height: 60px;
+
+  /* heading-h2-bold */
+  --heading-h2-bold-family: "Pretendard";
+  --heading-h2-bold-size: 29px;
+  --heading-h2-bold-weight: 700;
+  --heading-h2-bold-line-height: 44px;
+
+  /* heading-h3-bold */
+  --heading-h3-bold-family: "Pretendard";
+  --heading-h3-bold-size: 24px;
+  --heading-h3-bold-weight: 700;
+  --heading-h3-bold-line-height: 36px;
+
+  /* heading-h4-bold */
+  --heading-h4-bold-family: "Pretendard";
+  --heading-h4-bold-size: 20px;
+  --heading-h4-bold-weight: 700;
+  --heading-h4-bold-line-height: 30px;
+
+  /* heading-h4-regular */
+  --heading-h4-regular-family: "Pretendard";
+  --heading-h4-regular-size: 20px;
+  --heading-h4-regular-weight: 400;
+  --heading-h4-regular-line-height: 30px;
+
+  /* heading-h5-bold */
+  --heading-h5-bold-family: "Pretendard";
+  --heading-h5-bold-size: 18px;
+  --heading-h5-bold-weight: 700;
+  --heading-h5-bold-line-height: 27px;
+
+  /* heading-h5-medium */
+  --heading-h5-medium-family: "Pretendard";
+  --heading-h5-medium-size: 18px;
+  --heading-h5-medium-weight: 500;
+  --heading-h5-medium-line-height: 27px;
+
+  /* heading-h5-regular */
+  --heading-h5-regular-family: "Pretendard";
+  --heading-h5-regular-size: 18px;
+  --heading-h5-regular-weight: 400;
+  --heading-h5-regular-line-height: 27px;
+}

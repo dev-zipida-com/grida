@@ -1,0 +1,125 @@
+list:
+  - property: bordered
+    description: Toggles rendering of the border around the list
+    type: boolean
+    default: 'false'
+  - property: dataSource
+    description: DataSource array for list
+    type: any[]
+    default: '-'
+  - property: footer
+    description: List footer renderer
+    type: ReactNode
+    default: '-'
+  - property: grid
+    description: >-
+      The grid type of list. You can set grid to something like {gutter: 16,
+      column: 4}
+    type: object
+    default: '-'
+  - property: header
+    description: List header renderer
+    type: ReactNode
+    default: '-'
+  - property: itemLayout
+    description: The layout of list
+    type: horizontal | vertical
+    default: horizontal
+  - property: loading
+    description: Shows a loading indicator while the contents of the list are being fetched
+    type: boolean | SpinProps (more)
+    default: 'false'
+  - property: loadMore
+    description: Shows a load more content
+    type: ReactNode
+    default: '-'
+  - property: locale
+    description: The i18n text including empty text
+    type: object
+    default: '{emptyText: No Data}'
+  - property: pagination
+    description: Pagination config, hide it by setting it to false
+    type: boolean | object
+    default: 'false'
+  - property: renderItem
+    description: Customize list item when using dataSource
+    type: (item) => ReactNode
+    default: '-'
+  - property: rowKey
+    description: >-
+      Item's unique value, could be an Item's key which holds a unique value of
+      type React.Key or function that receives Item and returns a React.Key
+    type: 'keyof T | (item: T) => React.Key'
+    default: '"key"'
+  - property: size
+    description: Size of list
+    type: default | large | small
+    default: default
+  - property: split
+    description: Toggles rendering of the split under the list item
+    type: boolean
+    default: 'true'
+  - property: position
+    description: The specify the position of Pagination
+    type: top | bottom | both
+    default: bottom
+  - property: align
+    description: The specify the alignment of Pagination
+    type: start | center | end
+    default: end
+  - property: column
+    description: The column of grid
+    type: number
+    default: '-'
+  - property: gutter
+    description: The spacing between grid
+    type: number
+    default: '0'
+  - property: xs
+    description: <576px column of grid
+    type: number
+    default: '-'
+  - property: sm
+    description: ≥576px column of grid
+    type: number
+    default: '-'
+  - property: md
+    description: ≥768px column of grid
+    type: number
+    default: '-'
+  - property: lg
+    description: ≥992px column of grid
+    type: number
+    default: '-'
+  - property: xl
+    description: ≥1200px column of grid
+    type: number
+    default: '-'
+  - property: xxl
+    description: ≥1600px column of grid
+    type: number
+    default: '-'
+  - property: actions
+    description: >-
+      The actions content of list item. If itemLayout is vertical, shows the
+      content on bottom, otherwise shows content on the far right
+    type: Array<ReactNode>
+    default: '-'
+  - property: extra
+    description: >-
+      The extra content of list item. If itemLayout is vertical, shows the
+      content on right, otherwise shows content on the far right
+    type: ReactNode
+    default: '-'
+  - property: avatar
+    description: The avatar of list item
+    type: ReactNode
+    default: '-'
+  - property: description
+    description: The description of list item
+    type: ReactNode
+    default: '-'
+  - property: title
+    description: The title of list item
+    type: ReactNode
+    default: '-'

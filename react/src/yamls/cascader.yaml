@@ -1,0 +1,196 @@
+cascader:
+  - property: allowClear
+    description: Whether allow clear
+    type: boolean
+    default: 'true'
+  - property: autoFocus
+    description: If get focus when component mounted
+    type: boolean
+    default: 'false'
+  - property: bordered
+    description: Whether has border style
+    type: boolean
+    default: 'true'
+  - property: clearIcon
+    description: The custom clear icon
+    type: ReactNode
+    default: '-'
+  - property: changeOnSelect
+    description: >-
+      (Work on single select) Change value on each selection if set to true, see
+      above demo for details
+    type: boolean
+    default: 'false'
+  - property: className
+    description: The additional css class
+    type: string
+    default: '-'
+  - property: defaultValue
+    description: Initial selected value
+    type: string[] | number[]
+    default: '[]'
+  - property: disabled
+    description: Whether disabled select
+    type: boolean
+    default: 'false'
+  - property: displayRender
+    description: The render function of displaying selected options
+    type: (label, selectedOptions) => ReactNode
+    default: label => label.join(/)
+  - property: popupClassName
+    description: The additional className of popup overlay
+    type: string
+    default: '-'
+  - property: dropdownRender
+    description: Customize dropdown content
+    type: '(menus: ReactNode) => ReactNode'
+    default: '-'
+  - property: expandIcon
+    description: Customize the current item expand icon
+    type: ReactNode
+    default: '-'
+  - property: expandTrigger
+    description: expand current item when click or hover, one of click hover
+    type: string
+    default: click
+  - property: fieldNames
+    description: Custom field name for label and value and children
+    type: object
+    default: '{ label: label, value: value, children: children }'
+  - property: getPopupContainer
+    description: >-
+      Parent Node which the selector should be rendered to. Default to body.
+      When position issues happen, try to modify it into scrollable content and
+      position it relative. example
+    type: function(triggerNode)
+    default: () => document.body
+  - property: loadData
+    description: To load option lazily, and it cannot work with showSearch
+    type: (selectedOptions) => void
+    default: '-'
+  - property: maxTagCount
+    description: Max tag count to show. responsive will cost render performance
+    type: number | responsive
+    default: '-'
+  - property: maxTagPlaceholder
+    description: Placeholder for not showing tags
+    type: ReactNode | function(omittedValues)
+    default: '-'
+  - property: maxTagTextLength
+    description: Max tag text length to show
+    type: number
+    default: '-'
+  - property: notFoundContent
+    description: Specify content to show when no result matches
+    type: string
+    default: Not Found
+  - property: open
+    description: Set visible of cascader popup
+    type: boolean
+    default: '-'
+  - property: options
+    description: The data options of cascade
+    type: Option[]
+    default: '-'
+  - property: placeholder
+    description: The input placeholder
+    type: string
+    default: Please select
+  - property: placement
+    description: Use preset popup align config from builtinPlacements
+    type: bottomLeft bottomRight topLeft topRight
+    default: bottomLeft
+  - property: showSearch
+    description: Whether show search input in single mode
+    type: boolean | Object
+    default: 'false'
+  - property: size
+    description: The input size
+    type: large | middle | small
+    default: '-'
+  - property: status
+    description: Set validation status
+    type: '''error'' | ''warning'''
+    default: '-'
+  - property: style
+    description: The additional style
+    type: CSSProperties
+    default: '-'
+  - property: suffixIcon
+    description: The custom suffix icon
+    type: ReactNode
+    default: '-'
+  - property: value
+    description: The selected value
+    type: string[] | number[]
+    default: '-'
+  - property: onChange
+    description: Callback when finishing cascader select
+    type: (value, selectedOptions) => void
+    default: '-'
+  - property: onDropdownVisibleChange
+    description: Callback when popup shown or hidden
+    type: (value) => void
+    default: '-'
+  - property: multiple
+    description: Support multiple or not
+    type: boolean
+    default: '-'
+  - property: removeIcon
+    description: The custom remove icon
+    type: ReactNode
+    default: '-'
+  - property: showCheckedStrategy
+    description: >-
+      The way show selected item in box. ** SHOW_CHILD: ** just show child
+      treeNode. Cascader.SHOW_PARENT: just show parent treeNode (when all child
+      treeNode under the parent treeNode are checked)
+    type: Cascader.SHOW_PARENT | Cascader.SHOW_CHILD
+    default: Cascader.SHOW_PARENT
+  - property: searchValue
+    description: Set search value，Need work with showSearch
+    type: string
+    default: '-'
+  - property: onSearch
+    description: The callback function triggered when input changed
+    type: '(search: string) => void'
+    default: '-'
+  - property: dropdownMenuColumnStyle
+    description: The style of the drop-down menu column
+    type: CSSProperties
+    default: '-'
+  - property: loadingIcon
+    description: The appearance of lazy loading (now is useless)
+    type: ReactNode
+    default: '-'
+  - property: filter
+    description: >-
+      The function will receive two arguments, inputValue and option, if the
+      function returns true, the option will be included in the filtered set;
+      Otherwise, it will be excluded
+    type: 'function(inputValue, path): boolean'
+    default: '-'
+  - property: limit
+    description: Set the count of filtered items
+    type: number | false
+    default: '50'
+  - property: matchInputWidth
+    description: Whether the width of list matches input, (how it looks)
+    type: boolean
+    default: 'true'
+  - property: render
+    description: Used to render filtered options
+    type: 'function(inputValue, path): ReactNode'
+    default: '-'
+  - property: sort
+    description: Used to sort filtered options
+    type: function(a, b, inputValue)
+    default: '-'
+  - property: blur()
+    description: Remove focus
+    type: ''
+    default: ''
+  - property: focus()
+    description: Get focus
+    type: ''
+    default: ''

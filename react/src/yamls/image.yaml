@@ -1,0 +1,37 @@
+image:
+  - property: alt
+    description: Image description
+    type: string
+    default: '-'
+  - property: fallback
+    description: Load failure fault-tolerant src
+    type: string
+    default: '-'
+  - property: height
+    description: Image height
+    type: string | number
+    default: '-'
+  - property: placeholder
+    description: Load placeholder, use default placeholder when set true
+    type: ReactNode
+    default: '-'
+  - property: preview
+    description: preview config, disabled when false
+    type: boolean | previewType
+    default: 'true'
+  - property: src
+    description: Image path
+    type: string
+    default: '-'
+  - property: width
+    description: Image width
+    type: string | number
+    default: '-'
+  - property: onError
+    description: Load failed callback
+    type: '(event: Event) => void'
+    default: '-'
+  - property: rootClassName
+    description: add custom className for image root DOM and preview mode root DOM
+    type: string
+    default: '-'

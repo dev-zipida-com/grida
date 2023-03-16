@@ -1,0 +1,17 @@
+.button {
+  background-color: var(--darkmode-text-title-primary);
+  border-radius: 100px;
+  padding: 4px 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--text-disabled-divider);
+}
+.btn-text {
+  color: var(--text-primary);
+  text-align: center;
+  font-family: var(--body-p1-medium-family);
+  font-size: var(--body-p1-medium-size);
+  font-weight: var(--body-p1-medium-weight);
+  line-height: var(--body-p1-medium-line-height);
+}

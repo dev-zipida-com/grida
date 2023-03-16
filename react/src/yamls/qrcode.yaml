@@ -1,0 +1,37 @@
+qrcode:
+  - property: value
+    description: scanned link
+    type: string
+    default: '-'
+  - property: icon
+    description: include image url (only image link are supported)
+    type: string
+    default: '-'
+  - property: size
+    description: QRCode size
+    type: number
+    default: '128'
+  - property: iconSize
+    description: include image size
+    type: number
+    default: '32'
+  - property: color
+    description: QRCode Color
+    type: string
+    default: '#000'
+  - property: bordered
+    description: Whether has border style
+    type: boolean
+    default: 'true'
+  - property: errorLevel
+    description: Error Code Level
+    type: '''L'' | ''M'' | ''Q'' | ''H'' '
+    default: M
+  - property: status
+    description: QRCode status
+    type: 'active | expired | loading '
+    default: active
+  - property: onRefresh
+    description: callback
+    type: () => void
+    default: '-'

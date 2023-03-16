@@ -1,0 +1,69 @@
+message:
+  - property: content
+    description: The content of the message
+    type: ReactNode | config
+    default: '-'
+  - property: duration
+    description: Time(seconds) before auto-dismiss, don't dismiss if set to 0
+    type: number
+    default: '1.5'
+  - property: onClose
+    description: Specify a function that will be called when the message is closed
+    type: function
+    default: '-'
+  - property: className
+    description: Customized CSS class
+    type: string
+    default: '-'
+  - property: content
+    description: The content of the message
+    type: ReactNode
+    default: '-'
+  - property: duration
+    description: Time(seconds) before auto-dismiss, don't dismiss if set to 0
+    type: number
+    default: '3'
+  - property: icon
+    description: Customized Icon
+    type: ReactNode
+    default: '-'
+  - property: key
+    description: The unique identifier of the Message
+    type: string | number
+    default: '-'
+  - property: style
+    description: Customized inline style
+    type: CSSProperties
+    default: '-'
+  - property: onClick
+    description: Specify a function that will be called when the message is clicked
+    type: function
+    default: '-'
+  - property: onClose
+    description: Specify a function that will be called when the message is closed
+    type: function
+    default: '-'
+  - property: duration
+    description: Time before auto-dismiss, in seconds
+    type: number
+    default: '3'
+  - property: getContainer
+    description: Return the mount node for Message
+    type: () => HTMLElement
+    default: () => document.body
+  - property: maxCount
+    description: Max message show, drop oldest if exceed limit
+    type: number
+    default: '-'
+  - property: prefixCls
+    description: The prefix className of message node
+    type: string
+    default: ant-message
+  - property: rtl
+    description: Whether to enable RTL mode
+    type: boolean
+    default: 'false'
+  - property: top
+    description: Distance from top
+    type: number
+    default: '8'

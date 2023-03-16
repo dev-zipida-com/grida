@@ -1,0 +1,86 @@
+tooltip:
+  - property: title
+    description: The text shown in the tooltip
+    type: ReactNode | () => ReactNode
+    default: '-'
+  - property: align
+    description: >-
+      This value will be merged into placement's config, please refer to the
+      settings rc-tooltip
+    type: object
+    default: '-'
+  - property: arrow
+    description: >-
+      Change arrow's visible state and change whether the arrow is pointed at
+      the center of target.
+    type: 'boolean | { arrowPointAtCenter: boolean }'
+    default: 'true'
+  - property: autoAdjustOverflow
+    description: Whether to adjust popup placement automatically when popup is off screen
+    type: boolean
+    default: 'true'
+  - property: color
+    description: The background color
+    type: string
+    default: '-'
+  - property: defaultOpen
+    description: Whether the floating tooltip card is open by default
+    type: boolean
+    default: 'false'
+  - property: destroyTooltipOnHide
+    description: >-
+      Whether destroy tooltip when hidden, parent container of tooltip will be
+      destroyed when keepParent is false
+    type: 'boolean | { keepParent?: boolean }'
+    default: 'false'
+  - property: getPopupContainer
+    description: >-
+      The DOM container of the tip, the default behavior is to create a div
+      element in body
+    type: '(triggerNode: HTMLElement) => HTMLElement'
+    default: () => document.body
+  - property: mouseEnterDelay
+    description: Delay in seconds, before tooltip is shown on mouse enter
+    type: number
+    default: '0.1'
+  - property: mouseLeaveDelay
+    description: Delay in seconds, before tooltip is hidden on mouse leave
+    type: number
+    default: '0.1'
+  - property: overlayClassName
+    description: Class name of the tooltip card
+    type: string
+    default: '-'
+  - property: overlayStyle
+    description: Style of the tooltip card
+    type: object
+    default: '-'
+  - property: overlayInnerStyle
+    description: Style of the tooltip inner content
+    type: object
+    default: '-'
+  - property: placement
+    description: >-
+      The position of the tooltip relative to the target, which can be one of
+      top left right bottom topLeft topRight bottomLeft bottomRight leftTop
+      leftBottom rightTop rightBottom
+    type: string
+    default: top
+  - property: trigger
+    description: Tooltip trigger mode. Could be multiple by passing an array
+    type: hover | focus | click | contextMenu | Array<string>
+    default: hover
+  - property: open
+    description: >-
+      Whether the floating tooltip card is open or not. Use visible under 4.23.0
+      (why?)
+    type: boolean
+    default: 'false'
+  - property: zIndex
+    description: Config z-index of Tooltip
+    type: number
+    default: '-'
+  - property: onOpenChange
+    description: Callback executed when visibility of the tooltip card is changed
+    type: '(open: boolean) => void'
+    default: '-'

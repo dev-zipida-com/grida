@@ -1,0 +1,127 @@
+drawer:
+  - property: autoFocus
+    description: Whether Drawer should get focused after open
+    type: boolean
+    default: 'true'
+  - property: afterOpenChange
+    description: Callback after the animation ends when switching drawers
+    type: function(open)
+    default: '-'
+  - property: bodyStyle
+    description: Style of the drawer content part
+    type: CSSProperties
+    default: '-'
+  - property: className
+    description: >-
+      Config Drawer Panel className. Use rootClassName if want to config top dom
+      style
+    type: string
+    default: '-'
+  - property: closable
+    description: >-
+      Whether a close (x) button is visible on top left of the Drawer dialog or
+      not
+    type: boolean
+    default: 'true'
+  - property: closeIcon
+    description: Custom close icon
+    type: ReactNode
+    default: <CloseOutlined />
+  - property: contentWrapperStyle
+    description: Style of the drawer wrapper of content part
+    type: CSSProperties
+    default: '-'
+  - property: destroyOnClose
+    description: Whether to unmount child components on closing drawer or not
+    type: boolean
+    default: 'false'
+  - property: extra
+    description: Extra actions area at corner
+    type: ReactNode
+    default: '-'
+  - property: footer
+    description: The footer for Drawer
+    type: ReactNode
+    default: '-'
+  - property: footerStyle
+    description: Style of the drawer footer part
+    type: CSSProperties
+    default: '-'
+  - property: forceRender
+    description: Pre-render Drawer component forcibly
+    type: boolean
+    default: 'false'
+  - property: getContainer
+    description: mounted node and display window for Drawer
+    type: HTMLElement | () => HTMLElement | Selectors | false
+    default: body
+  - property: headerStyle
+    description: Style of the drawer header part
+    type: CSSProperties
+    default: '-'
+  - property: height
+    description: Placement is top or bottom, height of the Drawer dialog
+    type: string | number
+    default: '378'
+  - property: keyboard
+    description: Whether support press esc to close
+    type: boolean
+    default: 'true'
+  - property: mask
+    description: Whether to show mask or not
+    type: boolean
+    default: 'true'
+  - property: maskClosable
+    description: Clicking on the mask (area outside the Drawer) to close the Drawer or not
+    type: boolean
+    default: 'true'
+  - property: maskStyle
+    description: Style for Drawer's mask element
+    type: CSSProperties
+    default: '{}'
+  - property: placement
+    description: The placement of the Drawer
+    type: top | right | bottom | left
+    default: right
+  - property: push
+    description: Nested drawers push behavior
+    type: 'boolean | { distance: string | number }'
+    default: '{ distance: 180 }'
+  - property: rootClassName
+    description: The class name of the container of the Drawer dialog
+    type: string
+    default: '-'
+  - property: rootStyle
+    description: Style of wrapper element which contains mask compare to style
+    type: CSSProperties
+    default: '-'
+  - property: style
+    description: Style of Drawer panel. Use bodyStyle if want to config body only
+    type: CSSProperties
+    default: '-'
+  - property: size
+    description: preset size of drawer, default 378px and large 736px
+    type: '''default'' | ''large'''
+    default: '''default'''
+  - property: title
+    description: The title for Drawer
+    type: ReactNode
+    default: '-'
+  - property: open
+    description: Whether the Drawer dialog is visible or not
+    type: boolean
+    default: 'false'
+  - property: width
+    description: Width of the Drawer dialog
+    type: string | number
+    default: '378'
+  - property: zIndex
+    description: The z-index of the Drawer
+    type: number
+    default: '1000'
+  - property: onClose
+    description: >-
+      Specify a callback that will be called when a user clicks mask, close
+      button or Cancel button
+    type: function(e)
+    default: '-'

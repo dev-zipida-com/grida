@@ -1,0 +1,101 @@
+card:
+  - property: actions
+    description: The action list, shows at the bottom of the Card
+    type: Array<ReactNode>
+    default: '-'
+  - property: activeTabKey
+    description: Current TabPane's key
+    type: string
+    default: '-'
+  - property: bodyStyle
+    description: Inline style to apply to the card content
+    type: CSSProperties
+    default: '-'
+  - property: bordered
+    description: Toggles rendering of the border around the card
+    type: boolean
+    default: 'true'
+  - property: cover
+    description: Card cover
+    type: ReactNode
+    default: '-'
+  - property: defaultActiveTabKey
+    description: Initial active TabPane's key, if activeTabKey is not set
+    type: string
+    default: '-'
+  - property: extra
+    description: Content to render in the top-right corner of the card
+    type: ReactNode
+    default: '-'
+  - property: headStyle
+    description: Inline style to apply to the card head
+    type: CSSProperties
+    default: '-'
+  - property: hoverable
+    description: Lift up when hovering card
+    type: boolean
+    default: 'false'
+  - property: loading
+    description: Shows a loading indicator while the contents of the card are being fetched
+    type: boolean
+    default: 'false'
+  - property: size
+    description: Size of card
+    type: default | small
+    default: default
+  - property: tabBarExtraContent
+    description: Extra content in tab bar
+    type: ReactNode
+    default: '-'
+  - property: tabList
+    description: List of TabPane's head
+    type: 'Array<{key: string, tab: ReactNode}>'
+    default: '-'
+  - property: tabProps
+    description: Tabs
+    type: '-'
+    default: '-'
+  - property: title
+    description: Card title
+    type: ReactNode
+    default: '-'
+  - property: type
+    description: Card style type, can be set to inner or not set
+    type: string
+    default: '-'
+  - property: onTabChange
+    description: Callback when tab is switched
+    type: (key) => void
+    default: '-'
+  - property: className
+    description: The className of container
+    type: string
+    default: '-'
+  - property: hoverable
+    description: Lift up when hovering card grid
+    type: boolean
+    default: 'true'
+  - property: style
+    description: The style object of container
+    type: CSSProperties
+    default: '-'
+  - property: avatar
+    description: Avatar or icon
+    type: ReactNode
+    default: '-'
+  - property: className
+    description: The className of container
+    type: string
+    default: '-'
+  - property: description
+    description: Description content
+    type: ReactNode
+    default: '-'
+  - property: style
+    description: The style object of container
+    type: CSSProperties
+    default: '-'
+  - property: title
+    description: Title content
+    type: ReactNode
+    default: '-'

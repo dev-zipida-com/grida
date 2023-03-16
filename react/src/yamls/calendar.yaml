@@ -1,0 +1,74 @@
+calendar:
+  - property: dateCellRender
+    description: >-
+      Customize the display of the date cell, the returned content will be
+      appended to the cell
+    type: 'function(date: Dayjs): ReactNode'
+    default: '-'
+  - property: dateFullCellRender
+    description: >-
+      Customize the display of the date cell, the returned content will override
+      the cell
+    type: 'function(date: Dayjs): ReactNode'
+    default: '-'
+  - property: defaultValue
+    description: The date selected by default
+    type: dayjs
+    default: '-'
+  - property: disabledDate
+    description: >-
+      Function that specifies the dates that cannot be selected, currentDate is
+      same dayjs object as value prop which you shouldn't mutate
+      it](https://github.com/ant-design/ant-design/issues/30987)
+    type: '(currentDate: Dayjs) => boolean'
+    default: '-'
+  - property: fullscreen
+    description: Whether to display in full-screen
+    type: boolean
+    default: 'true'
+  - property: headerRender
+    description: Render custom header in panel
+    type: >-
+      function(object:{value: Dayjs, type: string, onChange: f(), onTypeChange:
+      f()})
+    default: '-'
+  - property: locale
+    description: The calendar's locale
+    type: object
+    default: (default)
+  - property: mode
+    description: The display mode of the calendar
+    type: month | year
+    default: month
+  - property: monthCellRender
+    description: >-
+      Customize the display of the month cell, the returned content will be
+      appended to the cell
+    type: 'function(date: Dayjs): ReactNode'
+    default: '-'
+  - property: monthFullCellRender
+    description: >-
+      Customize the display of the month cell, the returned content will
+      override the cell
+    type: 'function(date: Dayjs): ReactNode'
+    default: '-'
+  - property: validRange
+    description: To set valid range
+    type: '[dayjs, dayjs]'
+    default: '-'
+  - property: value
+    description: The current selected date
+    type: dayjs
+    default: '-'
+  - property: onChange
+    description: Callback for when date changes
+    type: 'function(date: Dayjs)'
+    default: '-'
+  - property: onPanelChange
+    description: Callback for when panel changes
+    type: 'function(date: Dayjs, mode: string)'
+    default: '-'
+  - property: onSelect
+    description: Callback for when a date is selected
+    type: 'function(date: Dayjs）'
+    default: '-'

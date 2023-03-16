@@ -1,0 +1,165 @@
+input:
+  - property: addonAfter
+    description: The label text displayed after (on the right side of) the input field
+    type: ReactNode
+    default: '-'
+  - property: addonBefore
+    description: The label text displayed before (on the left side of) the input field
+    type: ReactNode
+    default: '-'
+  - property: allowClear
+    description: If allow to remove input content with clear icon
+    type: 'boolean | { clearIcon: ReactNode }'
+    default: 'false'
+  - property: bordered
+    description: Whether has border style
+    type: boolean
+    default: 'true'
+  - property: defaultValue
+    description: The initial input content
+    type: string
+    default: '-'
+  - property: disabled
+    description: Whether the input is disabled
+    type: boolean
+    default: 'false'
+  - property: id
+    description: The ID for input
+    type: string
+    default: '-'
+  - property: maxLength
+    description: The max length
+    type: number
+    default: '-'
+  - property: showCount
+    description: Whether show text count
+    type: >-
+      boolean | { formatter: (info: { value: string, count: number, maxLength?:
+      number }) => ReactNode }
+    default: 'false'
+  - property: status
+    description: Set validation status
+    type: '''error'' | ''warning'''
+    default: '-'
+  - property: prefix
+    description: The prefix icon for the Input
+    type: ReactNode
+    default: '-'
+  - property: size
+    description: >-
+      The size of the input box. Note: in the context of a form, the middle size
+      is used
+    type: large | middle | small
+    default: '-'
+  - property: suffix
+    description: The suffix icon for the Input
+    type: ReactNode
+    default: '-'
+  - property: type
+    description: >-
+      The type of input, see: MDN( use Input.TextArea instead of
+      type="textarea")
+    type: string
+    default: text
+  - property: value
+    description: The input content value
+    type: string
+    default: '-'
+  - property: onChange
+    description: Callback when user input
+    type: function(e)
+    default: '-'
+  - property: onPressEnter
+    description: The callback function that is triggered when Enter key is pressed
+    type: function(e)
+    default: '-'
+  - property: allowClear
+    description: If allow to remove input content with clear icon
+    type: boolean
+    default: 'false'
+  - property: autoSize
+    description: >-
+      Height autosize feature, can be set to true | false or an object {
+      minRows: 2, maxRows: 6 }
+    type: boolean | object
+    default: 'false'
+  - property: bordered
+    description: Whether has border style
+    type: boolean
+    default: 'true'
+  - property: defaultValue
+    description: The initial input content
+    type: string
+    default: '-'
+  - property: maxLength
+    description: The max length
+    type: number
+    default: '-'
+  - property: showCount
+    description: Whether show text count
+    type: >-
+      boolean | { formatter: (info: { value: string, count: number, maxLength?:
+      number }) => string }
+    default: 'false'
+  - property: value
+    description: The input content value
+    type: string
+    default: '-'
+  - property: onPressEnter
+    description: The callback function that is triggered when Enter key is pressed
+    type: function(e)
+    default: '-'
+  - property: onResize
+    description: The callback function that is triggered when resize
+    type: function({ width, height })
+    default: '-'
+  - property: enterButton
+    description: >-
+      Whether to show an enter button after input. This property conflicts with
+      the addonAfter property
+    type: boolean | ReactNode
+    default: 'false'
+  - property: loading
+    description: Search box with loading
+    type: boolean
+    default: 'false'
+  - property: onSearch
+    description: >-
+      The callback function triggered when you click on the search-icon, the
+      clear-icon or press the Enter key
+    type: function(value, event)
+    default: '-'
+  - property: compact
+    description: Whether use compact style
+    type: boolean
+    default: 'false'
+  - property: size
+    description: >-
+      The size of Input.Group specifies the size of the included Input fields.
+      Available: large default small
+    type: string
+    default: default
+  - property: iconRender
+    description: Custom toggle button
+    type: (visible) => ReactNode
+    default: '(visible) => (visible ? <EyeOutlined /> : <EyeInvisibleOutlined />)'
+  - property: visibilityToggle
+    description: Whether show toggle button or control password visible
+    type: boolean | VisibilityToggle
+    default: 'true'
+  - property: visible
+    description: Whether the password is show or hide
+    type: boolean
+    default: 'false'
+  - property: onVisibleChange
+    description: Callback executed when visibility of the password is changed
+    type: boolean
+    default: '-'
+  - property: blur
+    description: Remove focus
+    type: '-'
+    default: ''
+  - property: focus
+    description: Get focus
+    type: '(option?: { preventScroll?: boolean, cursor?: ''start'' | ''end'' | ''all'' })'
+    default: option - 4.10.0
