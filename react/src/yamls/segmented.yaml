@@ -1,0 +1,31 @@
+segmented:
+  - property: block
+    description: Option to fit width to its parent's width
+    type: boolean
+    default: 'false'
+  - property: defaultValue
+    description: Default selected value
+    type: string | number
+    default: ''
+  - property: disabled
+    description: Disable all segments
+    type: boolean
+    default: 'false'
+  - property: onChange
+    description: The callback function that is triggered when the state changes
+    type: 'function(value: string | number)'
+    default: ''
+  - property: options
+    description: Set children optional
+    type: >-
+      string[] | number[] | Array<{ label: ReactNode value: string icon?
+      ReactNode disabled?: boolean className?: string }>
+    default: '[]'
+  - property: size
+    description: The size of the Segmented.
+    type: large | middle | small
+    default: middle
+  - property: value
+    description: Currently selected value
+    type: string | number
+    default: ''

@@ -1,0 +1,57 @@
+checkbox:
+  - property: autoFocus
+    description: If get focus when component mounted
+    type: boolean
+    default: 'false'
+  - property: checked
+    description: Specifies whether the checkbox is selected
+    type: boolean
+    default: 'false'
+  - property: defaultChecked
+    description: 'Specifies the initial state: whether or not the checkbox is selected'
+    type: boolean
+    default: 'false'
+  - property: disabled
+    description: If disable checkbox
+    type: boolean
+    default: 'false'
+  - property: indeterminate
+    description: The indeterminate checked state of checkbox
+    type: boolean
+    default: 'false'
+  - property: onChange
+    description: The callback function that is triggered when the state changes
+    type: '(e: CheckboxChangeEvent) => void'
+    default: '-'
+  - property: defaultValue
+    description: Default selected value
+    type: (string | number)[]
+    default: '[]'
+  - property: disabled
+    description: If disable all checkboxes
+    type: boolean
+    default: 'false'
+  - property: name
+    description: The name property of all input[type="checkbox"] children
+    type: string
+    default: '-'
+  - property: options
+    description: Specifies options
+    type: string[] | number[] | Option[]
+    default: '[]'
+  - property: value
+    description: Used for setting the currently selected value
+    type: (string | number)[]
+    default: '[]'
+  - property: onChange
+    description: The callback function that is triggered when the state changes
+    type: '(checkedValue: CheckboxValueType[]) => void'
+    default: '-'
+  - property: blur()
+    description: Remove focus
+    type: ''
+    default: ''
+  - property: focus()
+    description: Get focus
+    type: ''
+    default: ''

@@ -1,0 +1,257 @@
+typography:
+  - property: code
+    description: Code style
+    type: boolean
+    default: 'false'
+  - property: copyable
+    description: Whether to be copyable, customize it via setting an object
+    type: boolean | copyable
+    default: 'false'
+  - property: delete
+    description: Deleted line style
+    type: boolean
+    default: 'false'
+  - property: disabled
+    description: Disabled content
+    type: boolean
+    default: 'false'
+  - property: editable
+    description: If editable. Can control edit state when is object
+    type: boolean | editable
+    default: 'false'
+  - property: ellipsis
+    description: >-
+      Display ellipsis when text overflows，can't configure expandable、rows and
+      onExpand by using object. Diff with Typography.Paragraph, Text do not have
+      100% width style which means it will fix width on the first ellipsis. If
+      you want to have responsive ellipsis, please set width manually
+    type: boolean | Omit<ellipsis, 'expandable' | 'rows' | 'onExpand'>
+    default: 'false'
+  - property: keyboard
+    description: Keyboard style
+    type: boolean
+    default: 'false'
+  - property: mark
+    description: Marked style
+    type: boolean
+    default: 'false'
+  - property: onClick
+    description: Set the handler to handle click event
+    type: (event) => void
+    default: '-'
+  - property: strong
+    description: Bold style
+    type: boolean
+    default: 'false'
+  - property: italic
+    description: Italic style
+    type: boolean
+    default: 'false'
+  - property: type
+    description: Content type
+    type: secondary | success | warning | danger
+    default: '-'
+  - property: underline
+    description: Underlined style
+    type: boolean
+    default: 'false'
+  - property: code
+    description: Code style
+    type: boolean
+    default: 'false'
+  - property: copyable
+    description: Whether to be copyable, customize it via setting an object
+    type: boolean | copyable
+    default: 'false'
+  - property: delete
+    description: Deleted line style
+    type: boolean
+    default: 'false'
+  - property: disabled
+    description: Disabled content
+    type: boolean
+    default: 'false'
+  - property: editable
+    description: If editable. Can control edit state when is object
+    type: boolean | editable
+    default: 'false'
+  - property: ellipsis
+    description: >-
+      Display ellipsis when text overflows, can configure rows and expandable by
+      using object
+    type: boolean | ellipsis
+    default: 'false'
+  - property: level
+    description: Set content importance. Match with h1, h2, h3, h4, h5
+    type: 'number: 1, 2, 3, 4, 5'
+    default: '1'
+  - property: mark
+    description: Marked style
+    type: boolean
+    default: 'false'
+  - property: onClick
+    description: Set the handler to handle click event
+    type: (event) => void
+    default: '-'
+  - property: italic
+    description: Italic style
+    type: boolean
+    default: 'false'
+  - property: type
+    description: Content type
+    type: secondary | success | warning | danger
+    default: '-'
+  - property: underline
+    description: Underlined style
+    type: boolean
+    default: 'false'
+  - property: code
+    description: Code style
+    type: boolean
+    default: 'false'
+  - property: copyable
+    description: Whether to be copyable, customize it via setting an object
+    type: boolean | copyable
+    default: 'false'
+  - property: delete
+    description: Deleted line style
+    type: boolean
+    default: 'false'
+  - property: disabled
+    description: Disabled content
+    type: boolean
+    default: 'false'
+  - property: editable
+    description: If editable. Can control edit state when is object
+    type: boolean | editable
+    default: 'false'
+  - property: ellipsis
+    description: >-
+      Display ellipsis when text overflows, can configure rows and expandable by
+      using object
+    type: boolean | ellipsis
+    default: 'false'
+  - property: mark
+    description: Marked style
+    type: boolean
+    default: 'false'
+  - property: onClick
+    description: Set the handler to handle click event
+    type: (event) => void
+    default: '-'
+  - property: strong
+    description: Bold style
+    type: boolean
+    default: 'false'
+  - property: italic
+    description: Italic style
+    type: boolean
+    default: 'false'
+  - property: type
+    description: Content type
+    type: secondary | success | warning | danger
+    default: '-'
+  - property: underline
+    description: Underlined style
+    type: boolean
+    default: 'false'
+  - property: format
+    description: The Mime Type of the text
+    type: '''text/plain'' | ''text/html'''
+    default: '-'
+  - property: icon
+    description: 'Custom copy icon: [copyIcon, copiedIcon]'
+    type: '[ReactNode, ReactNode]'
+    default: '-'
+  - property: text
+    description: The text to copy
+    type: string
+    default: '-'
+  - property: tooltips
+    description: Custom tooltip text, hide when it is false
+    type: '[ReactNode, ReactNode]'
+    default: '[Copy, Copied]'
+  - property: onCopy
+    description: Called when copied text
+    type: function
+    default: '-'
+  - property: autoSize
+    description: autoSize attribute of textarea
+    type: 'boolean | { minRows: number, maxRows: number }'
+    default: '-'
+  - property: editing
+    description: Whether to be editable
+    type: boolean
+    default: 'false'
+  - property: icon
+    description: Custom editable icon
+    type: ReactNode
+    default: <EditOutlined />
+  - property: maxLength
+    description: maxLength attribute of textarea
+    type: number
+    default: '-'
+  - property: tooltip
+    description: Custom tooltip text, hide when it is false
+    type: boolean | ReactNode
+    default: Edit
+  - property: text
+    description: >-
+      Edit text, specify the editing content instead of using the children
+      implicitly
+    type: string
+    default: '-'
+  - property: onChange
+    description: Called when input at textarea
+    type: 'function(value: string)'
+    default: '-'
+  - property: onCancel
+    description: Called when type ESC to exit editable state
+    type: function
+    default: '-'
+  - property: onStart
+    description: Called when enter editable state
+    type: function
+    default: '-'
+  - property: onEnd
+    description: Called when type ENTER to exit editable state
+    type: function
+    default: '-'
+  - property: triggerType
+    description: >-
+      Edit mode trigger - icon, text or both (not specifying icon as trigger
+      hides it)
+    type: Array<icon|text>
+    default: '[icon]'
+  - property: enterIcon
+    description: Custom "enter" icon in the edit field (passing null removes the icon)
+    type: ReactNode
+    default: <EnterOutlined />
+  - property: expandable
+    description: Whether to be expandable
+    type: boolean
+    default: '-'
+  - property: rows
+    description: Max rows of content
+    type: number
+    default: '-'
+  - property: suffix
+    description: Suffix of ellipsis content
+    type: string
+    default: '-'
+  - property: symbol
+    description: Custom description of ellipsis
+    type: ReactNode
+    default: Expand
+  - property: tooltip
+    description: Show tooltip when ellipsis
+    type: boolean | ReactNode | TooltipProps
+    default: '-'
+  - property: onEllipsis
+    description: Called when enter or leave ellipsis state
+    type: function(ellipsis)
+    default: '-'
+  - property: onExpand
+    description: Called when expand content
+    type: function(event)
+    default: '-'

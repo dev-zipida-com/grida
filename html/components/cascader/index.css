@@ -1,0 +1,25 @@
+.container {
+  width: 530px;
+}
+.select-box {
+  width: 100%;
+  background-color: var(--darkmode-text-title-primary);
+  overflow: hidden;
+  border-radius: 2px;
+  padding: 4px 11px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--text-disabled-divider);
+}
+.dropdown-select-box-text {
+  color: var(--text-title);
+  font-family: var(--body-p1-regular-family);
+  font-size: var(--body-p1-regular-size);
+  font-weight: var(--body-p1-regular-weight);
+  line-height: var(--body-p1-regular-line-height);
+}
+.icon-dropdown {
+  width: 8.24px;
+  height: 4.7px;
+}

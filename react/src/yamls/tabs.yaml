@@ -1,0 +1,115 @@
+tabs:
+  - property: activeKey
+    description: Current TabPane's key
+    type: string
+    default: '-'
+  - property: addIcon
+    description: Customize add icon
+    type: ReactNode
+    default: '-'
+  - property: animated
+    description: Whether to change tabs with animation. Only works while tabPosition="top"
+    type: 'boolean | { inkBar: boolean, tabPane: boolean }'
+    default: '{ inkBar: true, tabPane: false }'
+  - property: centered
+    description: Centers tabs
+    type: boolean
+    default: 'false'
+  - property: defaultActiveKey
+    description: Initial active TabPane's key, if activeKey is not set
+    type: string
+    default: '-'
+  - property: hideAdd
+    description: Hide plus icon or not. Only works while type="editable-card"
+    type: boolean
+    default: 'false'
+  - property: items
+    description: Configure tab content
+    type: TabItemType
+    default: '[]'
+  - property: moreIcon
+    description: The custom icon of ellipsis
+    type: ReactNode
+    default: <EllipsisOutlined />
+  - property: popupClassName
+    description: className for more dropdown.
+    type: string
+    default: '-'
+  - property: renderTabBar
+    description: Replace the TabBar
+    type: >-
+      (props: DefaultTabBarProps, DefaultTabBar: React.ComponentClass) =>
+      React.ReactElement
+    default: '-'
+  - property: size
+    description: Preset tab bar size
+    type: large | middle | small
+    default: middle
+  - property: tabBarExtraContent
+    description: Extra content in tab bar
+    type: 'ReactNode | {left?: ReactNode, right?: ReactNode}'
+    default: '-'
+  - property: tabBarGutter
+    description: The gap between tabs
+    type: number
+    default: '-'
+  - property: tabBarStyle
+    description: Tab bar style object
+    type: CSSProperties
+    default: '-'
+  - property: tabPosition
+    description: Position of tabs
+    type: top | right | bottom | left
+    default: top
+  - property: destroyInactiveTabPane
+    description: Whether destroy inactive TabPane when change tab
+    type: boolean
+    default: 'false'
+  - property: type
+    description: Basic style of tabs
+    type: line | card | editable-card
+    default: line
+  - property: onChange
+    description: Callback executed when active tab is changed
+    type: function(activeKey) {}
+    default: '-'
+  - property: onEdit
+    description: >-
+      Callback executed when tab is added or removed. Only works while
+      type="editable-card"
+    type: '(action === ''add'' ? event : targetKey, action): void'
+    default: '-'
+  - property: onTabClick
+    description: Callback executed when tab is clicked
+    type: 'function(key: string, event: MouseEvent)'
+    default: '-'
+  - property: onTabScroll
+    description: Trigger when tab scroll
+    type: 'function({ direction: left | right | top | bottom })'
+    default: '-'
+  - property: closeIcon
+    description: >-
+      Customize close icon in TabPane's head. Only works while
+      type="editable-card"
+    type: ReactNode
+    default: '-'
+  - property: disabled
+    description: Set TabPane disabled
+    type: boolean
+    default: 'false'
+  - property: forceRender
+    description: Forced render of content in tabs, not lazy render after clicking on tabs
+    type: boolean
+    default: 'false'
+  - property: key
+    description: TabPane's key
+    type: string
+    default: '-'
+  - property: label
+    description: TabPane's head display text
+    type: ReactNode
+    default: '-'
+  - property: children
+    description: TabPane's head display content
+    type: ReactNode
+    default: '-'

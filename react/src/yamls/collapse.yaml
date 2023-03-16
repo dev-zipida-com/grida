@@ -1,0 +1,77 @@
+collapse:
+  - property: accordion
+    description: If true, Collapse renders as Accordion
+    type: boolean
+    default: 'false'
+  - property: activeKey
+    description: Key of the active panel
+    type: string[] | string  number[] | number
+    default: No default value. In accordion mode, it's the key of the first panel
+  - property: bordered
+    description: Toggles rendering of the border around the collapse block
+    type: boolean
+    default: 'true'
+  - property: collapsible
+    description: >-
+      Specify whether the panels of children be collapsible or the trigger area
+      of collapsible
+    type: header | icon | disabled
+    default: '-'
+  - property: defaultActiveKey
+    description: Key of the initial active panel
+    type: string[] | string  number[] | number
+    default: '-'
+  - property: destroyInactivePanel
+    description: Destroy Inactive Panel
+    type: boolean
+    default: 'false'
+  - property: expandIcon
+    description: Allow to customize collapse icon
+    type: (panelProps) => ReactNode
+    default: '-'
+  - property: expandIconPosition
+    description: Set expand icon position
+    type: start | end
+    default: '-'
+  - property: ghost
+    description: Make the collapse borderless and its background transparent
+    type: boolean
+    default: 'false'
+  - property: size
+    description: Set the size of collapse
+    type: large | middle | small
+    default: middle
+  - property: onChange
+    description: Callback function executed when active panel is changed
+    type: function
+    default: '-'
+  - property: collapsible
+    description: >-
+      Specify whether the panel be collapsible or the trigger area of
+      collapsible
+    type: header | icon | disabled
+    default: '-'
+  - property: extra
+    description: The extra element in the corner
+    type: ReactNode
+    default: '-'
+  - property: forceRender
+    description: >-
+      Forced render of content on panel, instead of lazy rendering after
+      clicking on header
+    type: boolean
+    default: 'false'
+  - property: header
+    description: Title of the panel
+    type: ReactNode
+    default: '-'
+  - property: key
+    description: Unique key identifying the panel from among its siblings
+    type: string | number
+    default: '-'
+  - property: showArrow
+    description: >-
+      If false, panel will not show arrow icon. If false, collapsible can't be
+      set as icon
+    type: boolean
+    default: 'true'

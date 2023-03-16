@@ -1,0 +1,87 @@
+progress:
+  - property: format
+    description: The template function of the content
+    type: function(percent, successPercent)
+    default: (percent) => percent + %
+  - property: percent
+    description: To set the completion percentage
+    type: number
+    default: '0'
+  - property: showInfo
+    description: Whether to display the progress value and the status icon
+    type: boolean
+    default: 'true'
+  - property: status
+    description: >-
+      To set the status of the Progress, options: success exception normal
+      active(line only)
+    type: string
+    default: '-'
+  - property: strokeColor
+    description: The color of progress bar
+    type: string
+    default: '-'
+  - property: strokeLinecap
+    description: To set the style of the progress linecap
+    type: round | butt | square, see stroke-linecap
+    default: round
+  - property: success
+    description: Configs of successfully progress bar
+    type: '{ percent: number, strokeColor: string }'
+    default: '-'
+  - property: trailColor
+    description: The color of unfilled part
+    type: string
+    default: '-'
+  - property: type
+    description: 'To set the type, options: line circle dashboard'
+    type: string
+    default: line
+  - property: steps
+    description: The total step count
+    type: number
+    default: '-'
+  - property: strokeColor
+    description: >-
+      The color of progress bar, render linear-gradient when passing an object,
+      could accept string[] when has steps.
+    type: 'string | string[] | { from: string; to: string; direction: string }'
+    default: '-'
+  - property: strokeWidth
+    description: 'To set the width of the progress bar, unit: px'
+    type: number
+    default: '10'
+  - property: strokeColor
+    description: >-
+      The color of circular progress, render linear-gradient when passing an
+      object
+    type: string | object
+    default: '-'
+  - property: strokeWidth
+    description: >-
+      To set the width of the circular progress, unit: percentage of the canvas
+      width
+    type: number
+    default: '6'
+  - property: width
+    description: 'To set the canvas width of the circular progress, unit: px'
+    type: number
+    default: '132'
+  - property: gapDegree
+    description: The gap degree of half circle, 0 ~ 295
+    type: number
+    default: '75'
+  - property: gapPosition
+    description: 'The gap position, options: top bottom left right'
+    type: string
+    default: bottom
+  - property: strokeWidth
+    description: >-
+      To set the width of the dashboard progress, unit: percentage of the canvas
+      width
+    type: number
+    default: '6'
+  - property: width
+    description: 'To set the canvas width of the dashboard progress, unit: px'
+    type: number
+    default: '132'

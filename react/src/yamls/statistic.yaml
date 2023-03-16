@@ -1,0 +1,73 @@
+statistic:
+  - property: decimalSeparator
+    description: The decimal separator
+    type: string
+    default: .
+  - property: formatter
+    description: Customize value display logic
+    type: (value) => ReactNode
+    default: '-'
+  - property: groupSeparator
+    description: Group separator
+    type: string
+    default: ','
+  - property: loading
+    description: Loading status of Statistic
+    type: boolean
+    default: 'false'
+  - property: precision
+    description: The precision of input value
+    type: number
+    default: '-'
+  - property: prefix
+    description: The prefix node of value
+    type: ReactNode
+    default: '-'
+  - property: suffix
+    description: The suffix node of value
+    type: ReactNode
+    default: '-'
+  - property: title
+    description: Display title
+    type: ReactNode
+    default: '-'
+  - property: value
+    description: Display value
+    type: string | number
+    default: '-'
+  - property: valueStyle
+    description: Set value section style
+    type: CSSProperties
+    default: '-'
+  - property: format
+    description: Format as dayjs
+    type: string
+    default: HH:mm:ss
+  - property: prefix
+    description: The prefix node of value
+    type: ReactNode
+    default: '-'
+  - property: suffix
+    description: The suffix node of value
+    type: ReactNode
+    default: '-'
+  - property: title
+    description: Display title
+    type: ReactNode
+    default: '-'
+  - property: value
+    description: Set target countdown time
+    type: number | dayjs
+    default: '-'
+  - property: valueStyle
+    description: Set value section style
+    type: CSSProperties
+    default: '-'
+  - property: onFinish
+    description: Trigger when time's up
+    type: () => void
+    default: '-'
+  - property: onChange
+    description: Trigger when time's changing
+    type: '(value: number) => void'
+    default: '-'

@@ -1,0 +1,25 @@
+spin:
+  - property: delay
+    description: Specifies a delay in milliseconds for loading state (prevent flush)
+    type: number (milliseconds)
+    default: '-'
+  - property: indicator
+    description: React node of the spinning indicator
+    type: ReactNode
+    default: '-'
+  - property: size
+    description: 'The size of Spin, options: small, default and large'
+    type: string
+    default: default
+  - property: spinning
+    description: Whether Spin is visible
+    type: boolean
+    default: 'true'
+  - property: tip
+    description: Customize description content when Spin has children
+    type: ReactNode
+    default: '-'
+  - property: wrapperClassName
+    description: The className of wrapper when Spin has children
+    type: string
+    default: '-'

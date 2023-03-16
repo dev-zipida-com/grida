@@ -1,0 +1,55 @@
+badge:
+  - property: color
+    description: Customize Badge dot color
+    type: string
+    default: '-'
+  - property: count
+    description: Number to show in badge
+    type: ReactNode
+    default: '-'
+  - property: dot
+    description: Whether to display a red dot instead of count
+    type: boolean
+    default: 'false'
+  - property: offset
+    description: Set offset of the badge dot
+    type: '[number, number]'
+    default: '-'
+  - property: overflowCount
+    description: Max count to show
+    type: number
+    default: '99'
+  - property: showZero
+    description: Whether to show badge when count is zero
+    type: boolean
+    default: 'false'
+  - property: size
+    description: If count is set, size sets the size of badge
+    type: default | small
+    default: '-'
+  - property: status
+    description: Set Badge as a status dot
+    type: success | processing | default | error | warning
+    default: '-'
+  - property: text
+    description: If status is set, text sets the display text of the status dot
+    type: ReactNode
+    default: '-'
+  - property: title
+    description: Text to show when hovering over the badge
+    type: string
+    default: '-'
+  - property: color
+    description: Customize Ribbon color
+    type: string
+    default: '-'
+  - property: placement
+    description: >-
+      The placement of the Ribbon, start and end follow text direction (RTL or
+      LTR)
+    type: start | end
+    default: end
+  - property: text
+    description: Content inside the Ribbon
+    type: ReactNode
+    default: '-'

@@ -1,0 +1,133 @@
+transfer:
+  - property: dataSource
+    description: >-
+      Used for setting the source data. The elements that are part of this array
+      will be present the left column. Except the elements whose keys are
+      included in targetKeys prop
+    type: RecordType extends TransferItem = TransferItem[]
+    default: '[]'
+  - property: disabled
+    description: Whether disabled transfer
+    type: boolean
+    default: 'false'
+  - property: filterOption
+    description: >-
+      A function to determine whether an item should show in search result list,
+      only works when searching
+    type: '(inputValue, option): boolean'
+    default: '-'
+  - property: footer
+    description: A function used for rendering the footer
+    type: (props, { direction }) => ReactNode
+    default: '-'
+  - property: listStyle
+    description: A custom CSS style used for rendering the transfer columns
+    type: 'object | ({direction: left | right}) => object'
+    default: '-'
+  - property: locale
+    description: The i18n text including filter, empty text, item unit, etc
+    type: >-
+      { itemUnit: string; itemsUnit: string; searchPlaceholder: string;
+      notFoundContent: ReactNode | ReactNode[]; }
+    default: >-
+      { itemUnit: item, itemsUnit: items, notFoundContent: The list is empty,
+      searchPlaceholder: Search here }
+  - property: oneWay
+    description: Display as single direction style
+    type: boolean
+    default: 'false'
+  - property: operations
+    description: A set of operations that are sorted from top to bottom
+    type: string[]
+    default: '[>, <]'
+  - property: operationStyle
+    description: A custom CSS style used for rendering the operations column
+    type: object
+    default: '-'
+  - property: pagination
+    description: Use pagination. Not work in render props
+    type: >-
+      boolean | { pageSize: number, simple: boolean, showSizeChanger?: boolean,
+      showLessItems?: boolean }
+    default: 'false'
+  - property: render
+    description: >-
+      The function to generate the item shown on a column. Based on an record
+      (element of the dataSource array), this function should return a React
+      element which is generated from that record. Also, it can return a plain
+      object with value and label, label is a React element and value is for
+      title
+    type: (record) => ReactNode
+    default: '-'
+  - property: selectAllLabels
+    description: A set of customized labels for select all checkboxes on the header
+    type: >-
+      (ReactNode | (info: { selectedCount: number, totalCount: number }) =>
+      ReactNode)[]
+    default: '-'
+  - property: selectedKeys
+    description: A set of keys of selected items
+    type: string[]
+    default: '[]'
+  - property: showSearch
+    description: If included, a search box is shown on each column
+    type: boolean
+    default: 'false'
+  - property: showSelectAll
+    description: Show select all checkbox on the header
+    type: boolean
+    default: 'true'
+  - property: status
+    description: Set validation status
+    type: '''error'' | ''warning'''
+    default: '-'
+  - property: targetKeys
+    description: A set of keys of elements that are listed on the right column
+    type: string[]
+    default: '[]'
+  - property: titles
+    description: A set of titles that are sorted from left to right
+    type: ReactNode[]
+    default: '-'
+  - property: onChange
+    description: >-
+      A callback function that is executed when the transfer between columns is
+      complete
+    type: '(targetKeys, direction, moveKeys): void'
+    default: '-'
+  - property: onScroll
+    description: A callback function which is executed when scroll options list
+    type: '(direction, event): void'
+    default: '-'
+  - property: onSearch
+    description: A callback function which is executed when search field are changed
+    type: '(direction: left | right, value: string): void'
+    default: '-'
+  - property: onSelectChange
+    description: A callback function which is executed when selected items are changed
+    type: '(sourceSelectedKeys, targetSelectedKeys): void'
+    default: '-'
+  - property: direction
+    description: List render direction
+    type: left | right
+    default: ''
+  - property: disabled
+    description: Disable list or not
+    type: boolean
+    default: ''
+  - property: filteredItems
+    description: Filtered items
+    type: RecordType[]
+    default: ''
+  - property: selectedKeys
+    description: Selected items
+    type: string[]
+    default: ''
+  - property: onItemSelect
+    description: Select item
+    type: '(key: string, selected: boolean)'
+    default: ''
+  - property: onItemSelectAll
+    description: Select a group of items
+    type: '(keys: string[], selected: boolean)'
+    default: ''

@@ -1,0 +1,116 @@
+notification:
+  - property: bottom
+    description: >-
+      Distance from the bottom of the viewport, when placement is bottomRight or
+      bottomLeft (unit: pixels)
+    type: number
+    default: '24'
+  - property: btn
+    description: Customized close button
+    type: ReactNode
+    default: '-'
+  - property: className
+    description: Customized CSS class
+    type: string
+    default: '-'
+  - property: closeIcon
+    description: Custom close icon
+    type: ReactNode
+    default: '-'
+  - property: description
+    description: The content of notification box (required)
+    type: ReactNode
+    default: '-'
+  - property: duration
+    description: >-
+      Time in seconds before Notification is closed. When set to 0 or null, it
+      will never be closed automatically
+    type: number
+    default: '4.5'
+  - property: getContainer
+    description: Return the mount node for Notification
+    type: () => HTMLNode
+    default: () => document.body
+  - property: icon
+    description: Customized icon
+    type: ReactNode
+    default: '-'
+  - property: key
+    description: The unique identifier of the Notification
+    type: string
+    default: '-'
+  - property: message
+    description: The title of notification box (required)
+    type: ReactNode
+    default: '-'
+  - property: placement
+    description: >-
+      Position of Notification, can be one of topLeft topRight bottomLeft
+      bottomRight
+    type: string
+    default: topRight
+  - property: style
+    description: Customized inline style
+    type: CSSProperties
+    default: '-'
+  - property: top
+    description: >-
+      Distance from the top of the viewport, when placement is topRight or
+      topLeft (unit: pixels)
+    type: number
+    default: '24'
+  - property: onClick
+    description: Specify a function that will be called when the notification is clicked
+    type: function
+    default: '-'
+  - property: onClose
+    description: Trigger when notification closed
+    type: function
+    default: '-'
+  - property: props
+    description: Props passed down
+    type: Object
+    default: >-
+      An object that can contain data-*, aria-*, or role props, to be put on the
+      notification div. This currently only allows data-testid instead of data-*
+      in TypeScript. See https://github.com/microsoft/TypeScript/issues/28960.
+  - property: bottom
+    description: >-
+      Distance from the bottom of the viewport, when placement is bottomRight or
+      bottomLeft (unit: pixels)
+    type: number
+    default: '24'
+  - property: closeIcon
+    description: Custom close icon
+    type: ReactNode
+    default: '-'
+  - property: duration
+    description: >-
+      Time in seconds before Notification is closed. When set to 0 or null, it
+      will never be closed automatically
+    type: number
+    default: '4.5'
+  - property: getContainer
+    description: Return the mount node for Notification
+    type: () => HTMLNode
+    default: () => document.body
+  - property: placement
+    description: >-
+      Position of Notification, can be one of topLeft topRight bottomLeft
+      bottomRight
+    type: string
+    default: topRight
+  - property: rtl
+    description: Whether to enable RTL mode
+    type: boolean
+    default: 'false'
+  - property: top
+    description: >-
+      Distance from the top of the viewport, when placement is topRight or
+      topLeft (unit: pixels)
+    type: number
+    default: '24'
+  - property: maxCount
+    description: Max Notification show, drop oldest if exceed limit
+    type: number
+    default: '-'

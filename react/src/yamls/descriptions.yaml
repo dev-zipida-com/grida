@@ -1,0 +1,55 @@
+descriptions:
+  - property: bordered
+    description: Whether to display the border
+    type: boolean
+    default: 'false'
+  - property: colon
+    description: Change default props colon value of Descriptions.Item
+    type: boolean
+    default: 'true'
+  - property: column
+    description: >-
+      The number of DescriptionItems in a row,could be a number or a object like
+      { xs: 8, sm: 16, md: 24},(Only set bordered={true} to take effect)
+    type: number
+    default: '3'
+  - property: contentStyle
+    description: Customize content style
+    type: CSSProperties
+    default: '-'
+  - property: extra
+    description: The action area of the description list, placed at the top-right
+    type: ReactNode
+    default: '-'
+  - property: labelStyle
+    description: Customize label style
+    type: CSSProperties
+    default: '-'
+  - property: layout
+    description: Define description layout
+    type: horizontal | vertical
+    default: horizontal
+  - property: size
+    description: Set the size of the list. Can be set to middle,small, or not filled
+    type: default | middle | small
+    default: '-'
+  - property: title
+    description: The title of the description list, placed at the top
+    type: ReactNode
+    default: '-'
+  - property: contentStyle
+    description: Customize content style
+    type: CSSProperties
+    default: '-'
+  - property: label
+    description: The description of the content
+    type: ReactNode
+    default: '-'
+  - property: labelStyle
+    description: Customize label style
+    type: CSSProperties
+    default: '-'
+  - property: span
+    description: The number of columns included
+    type: number
+    default: '1'

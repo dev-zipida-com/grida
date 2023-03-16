@@ -1,0 +1,26 @@
+.tooltip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.tooltip-content {
+  background-color: rgba(42, 44, 66, 0.9);
+  overflow: hidden;
+  border-radius: 2px;
+  padding: 5px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.bottom-tooltip {
+  color: var(--darkmode-text-title-primary);
+  font-family: var(--caption-regular-family);
+  font-size: var(--caption-regular-size);
+  font-weight: var(--caption-regular-weight);
+  line-height: var(--caption-regular-line-height);
+}
+.polygon-3 {
+  width: 10.1px;
+  height: 7px;
+}

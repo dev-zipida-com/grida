@@ -1,0 +1,81 @@
+pagination:
+  - property: current
+    description: Current page number
+    type: number
+    default: '-'
+  - property: defaultCurrent
+    description: Default initial page number
+    type: number
+    default: '1'
+  - property: defaultPageSize
+    description: Default number of data items per page
+    type: number
+    default: '10'
+  - property: disabled
+    description: Disable pagination
+    type: boolean
+    default: '-'
+  - property: hideOnSinglePage
+    description: Whether to hide pager on single page
+    type: boolean
+    default: 'false'
+  - property: itemRender
+    description: To customize item's innerHTML
+    type: '(page, type: ''page'' | ''prev'' | ''next'', originalElement) => React.ReactNode'
+    default: '-'
+  - property: pageSize
+    description: Number of data items per page
+    type: number
+    default: '-'
+  - property: pageSizeOptions
+    description: Specify the sizeChanger options
+    type: string[]
+    default: '[10, 20, 50, 100]'
+  - property: responsive
+    description: >-
+      If size is not specified, Pagination would resize according to the width
+      of the window
+    type: boolean
+    default: '-'
+  - property: showLessItems
+    description: Show less page items
+    type: boolean
+    default: 'false'
+  - property: showQuickJumper
+    description: Determine whether you can jump to pages directly
+    type: 'boolean | { goButton: ReactNode }'
+    default: 'false'
+  - property: showSizeChanger
+    description: Determine whether to show pageSize select, it will be true when total > 50
+    type: boolean
+    default: '-'
+  - property: showTitle
+    description: Show page item's title
+    type: boolean
+    default: 'true'
+  - property: showTotal
+    description: To display the total number and range
+    type: function(total, range)
+    default: '-'
+  - property: simple
+    description: Whether to use simple mode
+    type: boolean
+    default: '-'
+  - property: size
+    description: Specify the size of Pagination, can be set to small
+    type: default | small
+    default: default
+  - property: total
+    description: Total number of data items
+    type: number
+    default: '0'
+  - property: onChange
+    description: >-
+      Called when the page number or pageSize is changed, and it takes the
+      resulting page number and pageSize as its arguments
+    type: function(page, pageSize)
+    default: '-'
+  - property: onShowSizeChange
+    description: Called when pageSize is changed
+    type: function(current, size)
+    default: '-'

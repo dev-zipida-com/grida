@@ -1,0 +1,41 @@
+breadcrumb:
+  - property: itemRender
+    description: Custom item renderer
+    type: (route, params, routes, paths) => ReactNode
+    default: '-'
+  - property: params
+    description: Routing parameters
+    type: object
+    default: '-'
+  - property: routes
+    description: The routing stack information of router
+    type: routes[]
+    default: '-'
+  - property: separator
+    description: Custom separator
+    type: ReactNode
+    default: /
+  - property: className
+    description: The additional css class
+    type: string
+    default: '-'
+  - property: dropdownProps
+    description: The dropdown props
+    type: Dropdown
+    default: '-'
+  - property: href
+    description: Target of hyperlink
+    type: string
+    default: '-'
+  - property: menu
+    description: The menu props
+    type: MenuProps
+    default: '-'
+  - property: onClick
+    description: Set the handler to handle click event
+    type: (e:MouseEvent) => void
+    default: '-'
+  - property: children
+    description: Custom separator
+    type: ReactNode
+    default: /

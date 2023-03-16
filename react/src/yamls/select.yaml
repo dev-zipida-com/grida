@@ -1,0 +1,273 @@
+select:
+  - property: allowClear
+    description: Show clear button
+    type: boolean
+    default: 'false'
+  - property: autoClearSearchValue
+    description: >-
+      Whether the current search will be cleared on selecting an item. Only
+      applies when mode is set to multiple or tags
+    type: boolean
+    default: 'true'
+  - property: autoFocus
+    description: Get focus by default
+    type: boolean
+    default: 'false'
+  - property: bordered
+    description: Whether has border style
+    type: boolean
+    default: 'true'
+  - property: clearIcon
+    description: The custom clear icon
+    type: ReactNode
+    default: '-'
+  - property: defaultActiveFirstOption
+    description: Whether active first option by default
+    type: boolean
+    default: 'true'
+  - property: defaultOpen
+    description: Initial open state of dropdown
+    type: boolean
+    default: '-'
+  - property: defaultValue
+    description: Initial selected option
+    type: string | string[] | number | number[] | LabeledValue | LabeledValue[]
+    default: '-'
+  - property: disabled
+    description: Whether disabled select
+    type: boolean
+    default: 'false'
+  - property: popupClassName
+    description: The className of dropdown menu
+    type: string
+    default: '-'
+  - property: dropdownMatchSelectWidth
+    description: >-
+      Determine whether the dropdown menu and the select input are the same
+      width. Default set min-width same as input. Will ignore when value less
+      than select width. false will disable virtual scroll
+    type: boolean | number
+    default: 'true'
+  - property: dropdownRender
+    description: Customize dropdown content
+    type: '(originNode: ReactNode) => ReactNode'
+    default: '-'
+  - property: dropdownStyle
+    description: The style of dropdown menu
+    type: CSSProperties
+    default: '-'
+  - property: fieldNames
+    description: Customize node label, value, options field name
+    type: object
+    default: '{ label: label, value: value, options: options }'
+  - property: filterOption
+    description: >-
+      If true, filter options by input, if function, filter options against it.
+      The function will receive two arguments, inputValue and option, if the
+      function returns true, the option will be included in the filtered set;
+      Otherwise, it will be excluded
+    type: boolean | function(inputValue, option)
+    default: 'true'
+  - property: filterSort
+    description: Sort function for search options sorting, see Array.sort's compareFunction
+    type: '(optionA: Option, optionB: Option) => number'
+    default: '-'
+  - property: getPopupContainer
+    description: >-
+      Parent Node which the selector should be rendered to. Default to body.
+      When position issues happen, try to modify it into scrollable content and
+      position it relative. Example
+    type: function(triggerNode)
+    default: () => document.body
+  - property: labelInValue
+    description: >-
+      Whether to embed label in value, turn the format of value from string to {
+      value: string, label: ReactNode }
+    type: boolean
+    default: 'false'
+  - property: listHeight
+    description: Config popup height
+    type: number
+    default: '256'
+  - property: loading
+    description: Indicate loading state
+    type: boolean
+    default: 'false'
+  - property: maxTagCount
+    description: Max tag count to show. responsive will cost render performance
+    type: number | responsive
+    default: '-'
+  - property: maxTagPlaceholder
+    description: Placeholder for not showing tags
+    type: ReactNode | function(omittedValues)
+    default: '-'
+  - property: maxTagTextLength
+    description: Max tag text length to show
+    type: number
+    default: '-'
+  - property: menuItemSelectedIcon
+    description: The custom menuItemSelected icon with multiple options
+    type: ReactNode
+    default: '-'
+  - property: mode
+    description: Set mode of Select
+    type: multiple | tags
+    default: '-'
+  - property: notFoundContent
+    description: Specify content to show when no result matches
+    type: ReactNode
+    default: Not Found
+  - property: open
+    description: Controlled open state of dropdown
+    type: boolean
+    default: '-'
+  - property: optionFilterProp
+    description: >-
+      Which prop value of option will be used for filter if filterOption is
+      true. If options is set, it should be set to label
+    type: string
+    default: value
+  - property: optionLabelProp
+    description: Which prop value of option will render as content of select. Example
+    type: string
+    default: children
+  - property: options
+    description: Select options. Will get better perf than jsx definition
+    type: '{ label, value }[]'
+    default: '-'
+  - property: placeholder
+    description: Placeholder of select
+    type: ReactNode
+    default: '-'
+  - property: placement
+    description: The position where the selection box pops up
+    type: bottomLeft bottomRight topLeft topRight
+    default: bottomLeft
+  - property: removeIcon
+    description: The custom remove icon
+    type: ReactNode
+    default: '-'
+  - property: searchValue
+    description: The current input "search" text
+    type: string
+    default: '-'
+  - property: showArrow
+    description: Whether to show the drop-down arrow
+    type: boolean
+    default: true(for single select), false(for multiple select)
+  - property: showSearch
+    description: Whether select is searchable
+    type: boolean
+    default: 'single: false, multiple: true'
+  - property: size
+    description: Size of Select input
+    type: large | middle | small
+    default: middle
+  - property: status
+    description: Set validation status
+    type: '''error'' | ''warning'''
+    default: '-'
+  - property: suffixIcon
+    description: The custom suffix icon
+    type: ReactNode
+    default: '-'
+  - property: tagRender
+    description: Customize tag render, only applies when mode is set to multiple or tags
+    type: (props) => ReactNode
+    default: '-'
+  - property: tokenSeparators
+    description: Separator used to tokenize, only applies when mode="tags"
+    type: string[]
+    default: '-'
+  - property: value
+    description: Current selected option (considered as a immutable array)
+    type: string | string[] | number | number[] | LabeledValue | LabeledValue[]
+    default: '-'
+  - property: virtual
+    description: Disable virtual scroll when set to false
+    type: boolean
+    default: 'true'
+  - property: onBlur
+    description: Called when blur
+    type: function
+    default: '-'
+  - property: onChange
+    description: Called when select an option or input value change
+    type: function(value, option:Option | Array<Option>)
+    default: '-'
+  - property: onClear
+    description: Called when clear
+    type: function
+    default: '-'
+  - property: onDeselect
+    description: >-
+      Called when an option is deselected, param is the selected option's value.
+      Only called for multiple or tags, effective in multiple or tags mode only
+    type: 'function(value: string | number | LabeledValue)'
+    default: '-'
+  - property: onDropdownVisibleChange
+    description: Called when dropdown open
+    type: function(open)
+    default: '-'
+  - property: onFocus
+    description: Called when focus
+    type: function
+    default: '-'
+  - property: onInputKeyDown
+    description: Called when key pressed
+    type: function
+    default: '-'
+  - property: onMouseEnter
+    description: Called when mouse enter
+    type: function
+    default: '-'
+  - property: onMouseLeave
+    description: Called when mouse leave
+    type: function
+    default: '-'
+  - property: onPopupScroll
+    description: Called when dropdown scrolls
+    type: function
+    default: '-'
+  - property: onSearch
+    description: Callback function that is fired when input changed
+    type: 'function(value: string)'
+    default: '-'
+  - property: onSelect
+    description: >-
+      Called when an option is selected, the params are option's value (or key)
+      and option instance
+    type: 'function(value: string | number | LabeledValue, option: Option)'
+    default: '-'
+  - property: blur()
+    description: Remove focus
+    type: ''
+    default: ''
+  - property: focus()
+    description: Get focus
+    type: ''
+    default: ''
+  - property: className
+    description: The additional class to option
+    type: string
+    default: '-'
+  - property: disabled
+    description: Disable this option
+    type: boolean
+    default: 'false'
+  - property: title
+    description: title attribute of Select Option
+    type: string
+    default: '-'
+  - property: value
+    description: Default to filter with this property
+    type: string | number
+    default: '-'
+  - property: key
+    description: Group key
+    type: string
+    default: '-'
+  - property: label
+    description: Group label
+    type: string | React.Element
+    default: '-'

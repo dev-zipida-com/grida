@@ -1,0 +1,31 @@
+.container {
+  width: 113px;
+}
+.time-picker-select {
+  background-color: var(--darkmode-text-title-primary);
+  overflow: hidden;
+  border-radius: 2px;
+  padding: 4px 11px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--text-disabled-divider);
+}
+.time-picker-content {
+  display: flex;
+  align-items: center;
+}
+.time-picker-text-default {
+  color: var(--text-title);
+  font-family: var(--body-p1-regular-family);
+  font-size: var(--body-p1-regular-size);
+  font-weight: var(--body-p1-regular-weight);
+  line-height: var(--body-p1-regular-line-height);
+}
+.time-picker-text-default:not(:last-of-type) {
+  margin-right: 4px;
+}
+.clock-icon-default {
+  width: 16px;
+  height: 16px;
+}

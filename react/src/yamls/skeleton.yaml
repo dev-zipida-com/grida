@@ -1,0 +1,75 @@
+skeleton:
+  - property: active
+    description: Show animation effect
+    type: boolean
+    default: 'false'
+  - property: avatar
+    description: Show avatar placeholder
+    type: boolean | SkeletonAvatarProps
+    default: 'false'
+  - property: loading
+    description: Display the skeleton when true
+    type: boolean
+    default: '-'
+  - property: paragraph
+    description: Show paragraph placeholder
+    type: boolean | SkeletonParagraphProps
+    default: 'true'
+  - property: round
+    description: Show paragraph and title radius when true
+    type: boolean
+    default: 'false'
+  - property: title
+    description: Show title placeholder
+    type: boolean | SkeletonTitleProps
+    default: 'true'
+  - property: active
+    description: Show animation effect, only valid when used avatar independently
+    type: boolean
+    default: 'false'
+  - property: shape
+    description: Set the shape of avatar
+    type: circle | square
+    default: '-'
+  - property: size
+    description: Set the size of avatar
+    type: number | large | small | default
+    default: '-'
+  - property: width
+    description: Set the width of title
+    type: number | string
+    default: '-'
+  - property: rows
+    description: Set the row count of paragraph
+    type: number
+    default: '-'
+  - property: width
+    description: >-
+      Set the width of paragraph. When width is an Array, it can set the width
+      of each row. Otherwise only set the last row width
+    type: number | string | Array<number | string>
+    default: '-'
+  - property: active
+    description: Show animation effect
+    type: boolean
+    default: 'false'
+  - property: block
+    description: Option to fit button width to its parent width
+    type: boolean
+    default: 'false'
+  - property: shape
+    description: Set the shape of button
+    type: circle | round | square | default
+    default: '-'
+  - property: size
+    description: Set the size of button
+    type: large | small | default
+    default: '-'
+  - property: active
+    description: Show animation effect
+    type: boolean
+    default: 'false'
+  - property: size
+    description: Set the size of input
+    type: large | small | default
+    default: '-'

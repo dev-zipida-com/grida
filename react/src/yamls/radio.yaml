@@ -1,0 +1,67 @@
+radio:
+  - property: autoFocus
+    description: Whether get focus when component mounted
+    type: boolean
+    default: 'false'
+  - property: checked
+    description: Specifies whether the radio is selected
+    type: boolean
+    default: 'false'
+  - property: defaultChecked
+    description: 'Specifies the initial state: whether or not the radio is selected'
+    type: boolean
+    default: 'false'
+  - property: disabled
+    description: Disable radio
+    type: boolean
+    default: 'false'
+  - property: value
+    description: According to value for comparison, to determine whether the selected
+    type: any
+    default: '-'
+  - property: buttonStyle
+    description: The style type of radio button
+    type: outline | solid
+    default: outline
+  - property: defaultValue
+    description: Default selected value
+    type: any
+    default: '-'
+  - property: disabled
+    description: Disable all radio buttons
+    type: boolean
+    default: 'false'
+  - property: name
+    description: The name property of all input[type="radio"] children
+    type: string
+    default: '-'
+  - property: options
+    description: Set children optional
+    type: >-
+      string[] | number[] | Array<{ label: ReactNode; value: string; disabled?:
+      boolean; }>
+    default: '-'
+  - property: optionType
+    description: Set Radio optionType
+    type: default | button
+    default: default
+  - property: size
+    description: The size of radio button style
+    type: large | middle | small
+    default: '-'
+  - property: value
+    description: Used for setting the currently selected value
+    type: any
+    default: '-'
+  - property: onChange
+    description: The callback function that is triggered when the state changes
+    type: function(e:Event)
+    default: '-'
+  - property: blur()
+    description: Remove focus
+    type: ''
+    default: ''
+  - property: focus()
+    description: Get focus
+    type: ''
+    default: ''

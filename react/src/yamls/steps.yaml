@@ -1,0 +1,119 @@
+steps:
+  - property: className
+    description: Additional class to Steps
+    type: string
+    default: '-'
+  - property: current
+    description: >-
+      To set the current step, counting from 0. You can overwrite this state by
+      using status of Step
+    type: number
+    default: '0'
+  - property: direction
+    description: To specify the direction of the step bar, horizontal or vertical
+    type: string
+    default: horizontal
+  - property: initial
+    description: Set the initial step, counting from 0
+    type: number
+    default: '0'
+  - property: labelPlacement
+    description: Place title and description with horizontal or vertical direction
+    type: string
+    default: horizontal
+  - property: percent
+    description: >-
+      Progress circle percentage of current step in process status (only works
+      on basic Steps)
+    type: number
+    default: '-'
+  - property: progressDot
+    description: >-
+      Steps with progress dot style, customize the progress dot by setting it to
+      a function. labelPlacement will be vertical
+    type: boolean | (iconDot, {index, status, title, description}) => ReactNode
+    default: 'false'
+  - property: responsive
+    description: Change to vertical direction when screen width smaller than 532px
+    type: boolean
+    default: 'true'
+  - property: size
+    description: >-
+      To specify the size of the step bar, default and small are currently
+      supported
+    type: string
+    default: default
+  - property: status
+    description: >-
+      To specify the status of current step, can be set to one of the following
+      values: wait process finish error
+    type: string
+    default: process
+  - property: type
+    description: >-
+      Type of steps, can be set to one of the following values: default
+      navigation inline
+    type: string
+    default: default
+  - property: onChange
+    description: Trigger when Step is changed
+    type: (current) => void
+    default: '-'
+  - property: items
+    description: StepItem content
+    type: StepItem
+    default: '[]'
+  - property: className
+    description: Additional class to Steps
+    type: string
+    default: '-'
+  - property: current
+    description: >-
+      To set the current step, counting from 0. You can overwrite this state by
+      using status of Step
+    type: number
+    default: '0'
+  - property: initial
+    description: Set the initial step, counting from 0
+    type: number
+    default: '0'
+  - property: status
+    description: >-
+      To specify the status of current step, can be set to one of the following
+      values: wait process finish error
+    type: string
+    default: process
+  - property: onChange
+    description: Trigger when Step is changed
+    type: (current) => void
+    default: '-'
+  - property: items
+    description: 'StepItem content. not supported: icon subtitle'
+    type: StepItem
+    default: '[]'
+  - property: description
+    description: Description of the step, optional property
+    type: ReactNode
+    default: '-'
+  - property: disabled
+    description: Disable click
+    type: boolean
+    default: 'false'
+  - property: icon
+    description: Icon of the step, optional property
+    type: ReactNode
+    default: '-'
+  - property: status
+    description: >-
+      To specify the status. It will be automatically set by current of Steps if
+      not configured. Optional values are: wait process finish error
+    type: string
+    default: wait
+  - property: subTitle
+    description: Subtitle of the step
+    type: ReactNode
+    default: '-'
+  - property: title
+    description: Title of the step
+    type: ReactNode
+    default: '-'

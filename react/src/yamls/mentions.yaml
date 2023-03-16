@@ -1,0 +1,107 @@
+mentions:
+  - property: autoFocus
+    description: Auto get focus when component mounted
+    type: boolean
+    default: 'false'
+  - property: autoSize
+    description: >-
+      Textarea height autosize feature, can be set to true | false or an object
+      { minRows: 2, maxRows: 6 }
+    type: boolean | object
+    default: 'false'
+  - property: defaultValue
+    description: Default value
+    type: string
+    default: '-'
+  - property: filterOption
+    description: Customize filter option logic
+    type: 'false | (input: string, option: OptionProps) => boolean'
+    default: '-'
+  - property: getPopupContainer
+    description: Set the mount HTML node for suggestions
+    type: () => HTMLElement
+    default: '-'
+  - property: notFoundContent
+    description: Set mentions content when not match
+    type: ReactNode
+    default: Not Found
+  - property: placement
+    description: Set popup placement
+    type: top | bottom
+    default: bottom
+  - property: prefix
+    description: Set trigger prefix keyword
+    type: string | string[]
+    default: '@'
+  - property: split
+    description: Set split string before and after selected mention
+    type: string
+    default: ' '
+  - property: status
+    description: Set validation status
+    type: '''error'' | ''warning'' | ''success'' | ''validating'''
+    default: '-'
+  - property: validateSearch
+    description: Customize trigger search logic
+    type: '(text: string, props: MentionsProps) => void'
+    default: '-'
+  - property: value
+    description: Set value of mentions
+    type: string
+    default: '-'
+  - property: onBlur
+    description: Trigger when mentions lose focus
+    type: () => void
+    default: '-'
+  - property: onChange
+    description: Trigger when value changed
+    type: '(text: string) => void'
+    default: '-'
+  - property: onFocus
+    description: Trigger when mentions get focus
+    type: () => void
+    default: '-'
+  - property: onResize
+    description: The callback function that is triggered when textarea resize
+    type: function({ width, height })
+    default: '-'
+  - property: onSearch
+    description: Trigger when prefix hit
+    type: '(text: string, prefix: string) => void'
+    default: '-'
+  - property: onSelect
+    description: Trigger when user select the option
+    type: '(option: OptionProps, prefix: string) => void'
+    default: '-'
+  - property: options
+    description: Option Configuration
+    type: Options
+    default: '[]'
+  - property: blur()
+    description: Remove focus
+    type: ''
+    default: ''
+  - property: focus()
+    description: Get focus
+    type: ''
+    default: ''
+  - property: label
+    description: Title of the option
+    type: React.ReactNode
+    default: '-'
+  - property: key
+    description: The key value of the option
+    type: string
+    default: '-'
+  - property: disabled
+    description: Optional
+    type: boolean
+    default: '-'
+  - property: className
+    description: className
+    type: string
+    default: '-'
+  - property: style
+    description: The style of the option
+    type: React.CSSProperties
+    default: '-'

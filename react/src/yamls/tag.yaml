@@ -1,0 +1,29 @@
+tag:
+  - property: closable
+    description: Whether the Tag can be closed
+    type: boolean
+    default: 'false'
+  - property: closeIcon
+    description: Custom close icon
+    type: ReactNode
+    default: '-'
+  - property: color
+    description: Color of the Tag
+    type: string
+    default: '-'
+  - property: icon
+    description: Set the icon of tag
+    type: ReactNode
+    default: '-'
+  - property: onClose
+    description: Callback executed when tag is closed
+    type: (e) => void
+    default: '-'
+  - property: checked
+    description: Checked status of Tag
+    type: boolean
+    default: 'false'
+  - property: onChange
+    description: Callback executed when Tag is checked/unchecked
+    type: (checked) => void
+    default: '-'

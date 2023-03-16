@@ -1,0 +1,105 @@
+tour:
+  - property: arrow
+    description: >-
+      Whether to show the arrow, including the configuration whether to point to
+      the center of the element
+    type: 'boolean|{ pointAtCenter: boolean}'
+    default: 'true'
+  - property: placement
+    description: Position of the guide card relative to the target element
+    type: >-
+      left leftTop leftBottom right rightTop rightBottom top topLeft topRight
+      bottom bottomLeft bottomRight
+    default: bottom
+  - property: onClose
+    description: Callback function on shutdown
+    type: Function
+    default: '-'
+  - property: mask
+    description: >-
+      Whether to enable masking, change mask style and fill color by pass custom
+      props
+    type: 'boolean | { style?: React.CSSProperties; color?: string; }'
+    default: 'true'
+  - property: type
+    description: Type, affects the background color and text color
+    type: default primary
+    default: default
+  - property: open
+    description: Open tour
+    type: boolean
+    default: '-'
+  - property: onChange
+    description: Callback when the step changes. Current is the previous step
+    type: '(current: number) => void'
+    default: '-'
+  - property: current
+    description: What is the current step
+    type: number
+    default: '-'
+  - property: scrollIntoViewOptions
+    description: support pass custom scrollIntoView options
+    type: boolean | ScrollIntoViewOptions
+    default: 'true'
+  - property: indicatorsRender
+    description: custom indicator
+    type: '(current: number, total: number) => ReactNode'
+    default: '-'
+  - property: target
+    description: >-
+      Get the element the guide card points to. Empty makes it show in center of
+      screen
+    type: () => HTMLElement HTMLElement
+    default: '-'
+  - property: arrow
+    description: >-
+      Whether to show the arrow, including the configuration whether to point to
+      the center of the element
+    type: 'boolean { pointAtCenter: boolean}'
+    default: 'true'
+  - property: cover
+    description: Displayed pictures or videos
+    type: ReactNode
+    default: '-'
+  - property: title
+    description: title
+    type: ReactNode
+    default: '-'
+  - property: description
+    description: description
+    type: ReactNode
+    default: '-'
+  - property: placement
+    description: Position of the guide card relative to the target element
+    type: >-
+      left leftTop leftBottom right rightTop rightBottom top topLeft topRight
+      bottom bottomLeft bottomRight
+    default: bottom
+  - property: onClose
+    description: Callback function on shutdown
+    type: Function
+    default: '-'
+  - property: mask
+    description: >-
+      Whether to enable masking, change mask style and fill color by pass custom
+      props, the default follows the mask property of Tour
+    type: 'boolean | { style?: React.CSSProperties; color?: string; }'
+    default: 'true'
+  - property: type
+    description: Type, affects the background color and text color
+    type: default primary
+    default: default
+  - property: nextButtonProps
+    description: Properties of the Next button
+    type: '{ children: ReactNode; onClick: Function }'
+    default: '-'
+  - property: prevButtonProps
+    description: Properties of the previous button
+    type: '{ children: ReactNode; onClick: Function }'
+    default: '-'
+  - property: scrollIntoViewOptions
+    description: >-
+      support pass custom scrollIntoView options, the default follows the
+      scrollIntoViewOptions property of Tour
+    type: boolean | ScrollIntoViewOptions
+    default: 'true'

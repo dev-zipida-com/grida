@@ -1,0 +1,251 @@
+modal:
+  - property: afterClose
+    description: Specify a function that will be called when modal is closed completely
+    type: function
+    default: '-'
+  - property: bodyStyle
+    description: Body style for modal body element. Such as height, padding etc
+    type: CSSProperties
+    default: ''
+  - property: cancelButtonProps
+    description: The cancel button props
+    type: ButtonProps
+    default: '-'
+  - property: cancelText
+    description: Text of the Cancel button
+    type: ReactNode
+    default: Cancel
+  - property: centered
+    description: Centered Modal
+    type: boolean
+    default: 'false'
+  - property: closable
+    description: >-
+      Whether a close (x) button is visible on top right of the modal dialog or
+      not
+    type: boolean
+    default: 'true'
+  - property: closeIcon
+    description: Custom close icon
+    type: ReactNode
+    default: <CloseOutlined />
+  - property: confirmLoading
+    description: Whether to apply loading visual effect for OK button or not
+    type: boolean
+    default: 'false'
+  - property: destroyOnClose
+    description: Whether to unmount child components on onClose
+    type: boolean
+    default: 'false'
+  - property: focusTriggerAfterClose
+    description: Whether need to focus trigger element after dialog is closed
+    type: boolean
+    default: 'true'
+  - property: footer
+    description: Footer content, set as footer={null} when you don't need default buttons
+    type: ReactNode
+    default: (OK and Cancel buttons)
+  - property: forceRender
+    description: Force render Modal
+    type: boolean
+    default: 'false'
+  - property: getContainer
+    description: The mounted node for Modal but still display at fullscreen
+    type: HTMLElement | () => HTMLElement | Selectors | false
+    default: document.body
+  - property: keyboard
+    description: Whether support press esc to close
+    type: boolean
+    default: 'true'
+  - property: mask
+    description: Whether show mask or not
+    type: boolean
+    default: 'true'
+  - property: maskClosable
+    description: >-
+      Whether to close the modal dialog when the mask (area outside the modal)
+      is clicked
+    type: boolean
+    default: 'true'
+  - property: maskStyle
+    description: Style for modal's mask element
+    type: CSSProperties
+    default: ''
+  - property: modalRender
+    description: Custom modal content render
+    type: '(node: ReactNode) => ReactNode'
+    default: '-'
+  - property: okButtonProps
+    description: The ok button props
+    type: ButtonProps
+    default: '-'
+  - property: okText
+    description: Text of the OK button
+    type: ReactNode
+    default: OK
+  - property: okType
+    description: Button type of the OK button
+    type: string
+    default: primary
+  - property: style
+    description: >-
+      Style of floating layer, typically used at least for adjusting the
+      position
+    type: CSSProperties
+    default: '-'
+  - property: title
+    description: The modal dialog's title
+    type: ReactNode
+    default: '-'
+  - property: open
+    description: Whether the modal dialog is visible or not
+    type: boolean
+    default: 'false'
+  - property: width
+    description: Width of the modal dialog
+    type: string | number
+    default: '520'
+  - property: wrapClassName
+    description: The class name of the container of the modal dialog
+    type: string
+    default: '-'
+  - property: zIndex
+    description: The z-index of the Modal
+    type: number
+    default: '1000'
+  - property: onCancel
+    description: >-
+      Specify a function that will be called when a user clicks mask, close
+      button on top right or Cancel button
+    type: function(e)
+    default: '-'
+  - property: onOk
+    description: Specify a function that will be called when a user clicks the OK button
+    type: function(e)
+    default: '-'
+  - property: afterClose
+    description: Specify a function that will be called when modal is closed completely
+    type: function
+    default: '-'
+  - property: autoFocusButton
+    description: Specify which button to autofocus
+    type: null | ok | cancel
+    default: ok
+  - property: bodyStyle
+    description: Body style for modal body element. Such as height, padding etc
+    type: CSSProperties
+    default: ''
+  - property: cancelButtonProps
+    description: The cancel button props
+    type: ButtonProps
+    default: '-'
+  - property: cancelText
+    description: Text of the Cancel button with Modal.confirm
+    type: string
+    default: Cancel
+  - property: centered
+    description: Centered Modal
+    type: boolean
+    default: 'false'
+  - property: className
+    description: The className of container
+    type: string
+    default: '-'
+  - property: closable
+    description: >-
+      Whether a close (x) button is visible on top right of the confirm dialog
+      or not
+    type: boolean
+    default: 'false'
+  - property: closeIcon
+    description: Custom close icon
+    type: ReactNode
+    default: undefined
+  - property: content
+    description: Content
+    type: ReactNode
+    default: '-'
+  - property: footer
+    description: 'Footer content, set as footer: null when you don''t need default buttons'
+    type: ReactNode
+    default: '-'
+  - property: getContainer
+    description: Return the mount node for Modal
+    type: HTMLElement | () => HTMLElement | Selectors | false
+    default: document.body
+  - property: icon
+    description: Custom icon
+    type: ReactNode
+    default: <QuestionCircle />
+  - property: keyboard
+    description: Whether support press esc to close
+    type: boolean
+    default: 'true'
+  - property: mask
+    description: Whether show mask or not.
+    type: boolean
+    default: 'true'
+  - property: maskClosable
+    description: >-
+      Whether to close the modal dialog when the mask (area outside the modal)
+      is clicked
+    type: boolean
+    default: 'false'
+  - property: maskStyle
+    description: Style for modal's mask element
+    type: object
+    default: '{}'
+  - property: okButtonProps
+    description: The ok button props
+    type: ButtonProps
+    default: '-'
+  - property: okText
+    description: Text of the OK button
+    type: string
+    default: OK
+  - property: okType
+    description: Button type of the OK button
+    type: string
+    default: primary
+  - property: style
+    description: >-
+      Style of floating layer, typically used at least for adjusting the
+      position
+    type: CSSProperties
+    default: '-'
+  - property: title
+    description: Title
+    type: ReactNode
+    default: '-'
+  - property: width
+    description: Width of the modal dialog
+    type: string | number
+    default: '416'
+  - property: wrapClassName
+    description: The class name of the container of the modal dialog
+    type: string
+    default: '-'
+  - property: zIndex
+    description: The z-index of the Modal
+    type: number
+    default: '1000'
+  - property: onCancel
+    description: >-
+      Specify a function that will be called when the user clicks the Cancel
+      button. The parameter of this function is a function whose execution
+      should include closing the dialog. If the function does not take any
+      parameter (!onCancel.length) then modal dialog will be closed unless
+      returned value is true (!!onCancel()). You can also just return a promise
+      and when the promise is resolved, the modal dialog will also be closed
+    type: function(close)
+    default: '-'
+  - property: onOk
+    description: >-
+      Specify a function that will be called when the user clicks the OK button.
+      The parameter of this function is a function whose execution should
+      include closing the dialog. If the function does not take any parameter
+      (!onOk.length) then modal dialog will be closed unless returned value is
+      true (!!onOk()). You can also just return a promise and when the promise
+      is resolved, the modal dialog will also be closed
+    type: function(close)
+    default: '-'

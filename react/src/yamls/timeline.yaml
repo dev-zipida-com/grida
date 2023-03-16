@@ -1,0 +1,43 @@
+timeline:
+  - property: mode
+    description: >-
+      By sending alternate the timeline will distribute the nodes to the left
+      and right
+    type: left | alternate | right
+    default: '-'
+  - property: pending
+    description: Set the last ghost node's existence or its content
+    type: boolean | ReactNode
+    default: 'false'
+  - property: pendingDot
+    description: Set the dot of the last ghost node when pending is true
+    type: ReactNode
+    default: <LoadingOutlined />
+  - property: reverse
+    description: Whether reverse nodes or not
+    type: boolean
+    default: 'false'
+  - property: items
+    description: Each node of timeline
+    type: Items[]
+    default: 5.2.0
+  - property: color
+    description: Set the circle's color to blue, red, green, gray or other custom colors
+    type: string
+    default: blue
+  - property: dot
+    description: Customize timeline dot
+    type: ReactNode
+    default: '-'
+  - property: label
+    description: Set the label
+    type: ReactNode
+    default: '-'
+  - property: children
+    description: Set the content
+    type: ReactNode
+    default: '-'
+  - property: position
+    description: Customize node position
+    type: left | right
+    default: '-'

@@ -1,0 +1,43 @@
+carousel:
+  - property: autoplay
+    description: Whether to scroll automatically
+    type: boolean
+    default: 'false'
+  - property: dotPosition
+    description: The position of the dots, which can be one of top bottom left right
+    type: string
+    default: bottom
+  - property: dots
+    description: >-
+      Whether to show the dots at the bottom of the gallery, object for
+      dotsClass and any others
+    type: 'boolean | { className?: string }'
+    default: 'true'
+  - property: easing
+    description: Transition interpolation function name
+    type: string
+    default: linear
+  - property: effect
+    description: Transition effect
+    type: scrollx | fade
+    default: scrollx
+  - property: afterChange
+    description: Callback function called after the current index changes
+    type: function(current)
+    default: '-'
+  - property: beforeChange
+    description: Callback function called before the current index changes
+    type: function(from, to)
+    default: '-'
+  - property: goTo(slideNumber, dontAnimate)
+    description: Go to slide index, if dontAnimate=true, it happens without animation
+    type: ''
+    default: ''
+  - property: next()
+    description: Change current slide to next slide
+    type: ''
+    default: ''
+  - property: prev()
+    description: Change current slide to previous slide
+    type: ''
+    default: ''

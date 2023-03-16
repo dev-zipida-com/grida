@@ -1,0 +1,33 @@
+space:
+  - property: align
+    description: Align items
+    type: start | end |center |baseline
+    default: '-'
+  - property: direction
+    description: The space direction
+    type: vertical | horizontal
+    default: horizontal
+  - property: size
+    description: The space size
+    type: Size | Size[]
+    default: small
+  - property: split
+    description: Set split
+    type: ReactNode
+    default: '-'
+  - property: wrap
+    description: Auto wrap line, when horizontal effective
+    type: boolean
+    default: 'false'
+  - property: block
+    description: Option to fit width to its parent's width
+    type: boolean
+    default: 'false'
+  - property: direction
+    description: Set direction of layout
+    type: vertical | horizontal
+    default: horizontal
+  - property: size
+    description: Set child component size
+    type: large | middle | small
+    default: middle

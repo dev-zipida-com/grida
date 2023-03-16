@@ -1,0 +1,53 @@
+switch:
+  - property: autoFocus
+    description: Whether get focus when component mounted
+    type: boolean
+    default: 'false'
+  - property: checked
+    description: Determine whether the Switch is checked
+    type: boolean
+    default: 'false'
+  - property: checkedChildren
+    description: The content to be shown when the state is checked
+    type: ReactNode
+    default: '-'
+  - property: className
+    description: The additional class to Switch
+    type: string
+    default: '-'
+  - property: defaultChecked
+    description: Whether to set the initial state
+    type: boolean
+    default: 'false'
+  - property: disabled
+    description: Disable switch
+    type: boolean
+    default: 'false'
+  - property: loading
+    description: Loading state of switch
+    type: boolean
+    default: 'false'
+  - property: size
+    description: 'The size of the Switch, options: default small'
+    type: string
+    default: default
+  - property: unCheckedChildren
+    description: The content to be shown when the state is unchecked
+    type: ReactNode
+    default: '-'
+  - property: onChange
+    description: Trigger when the checked state is changing
+    type: 'function(checked: boolean, event: Event)'
+    default: '-'
+  - property: onClick
+    description: Trigger when clicked
+    type: 'function(checked: boolean, event: Event)'
+    default: '-'
+  - property: blur()
+    description: Remove focus
+    type: ''
+    default: ''
+  - property: focus()
+    description: Get focus
+    type: ''
+    default: ''

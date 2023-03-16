@@ -1,0 +1,79 @@
+anchor:
+  - property: affix
+    description: Fixed mode of Anchor
+    type: boolean
+    default: 'true'
+  - property: bounds
+    description: Bounding distance of anchor area
+    type: number
+    default: '5'
+  - property: getContainer
+    description: Scrolling container
+    type: () => HTMLElement
+    default: () => window
+  - property: getCurrentAnchor
+    description: Customize the anchor highlight
+    type: '(activeLink: string) => string'
+    default: '-'
+  - property: offsetTop
+    description: Pixels to offset from top when calculating position of scroll
+    type: number
+    default: '0'
+  - property: showInkInFixed
+    description: Whether show ink-square when affix={false}
+    type: boolean
+    default: 'false'
+  - property: targetOffset
+    description: Anchor scroll offset, default as offsetTop, example
+    type: number
+    default: '-'
+  - property: onChange
+    description: Listening for anchor link change
+    type: '(currentActiveLink: string) => void'
+    default: ''
+  - property: onClick
+    description: Set the handler to handle click event
+    type: '(e: MouseEvent, link: object) => void'
+    default: '-'
+  - property: items
+    description: Data configuration option content, support nesting through children
+    type: '{ key, href, title, target, children }[] see'
+    default: '-'
+  - property: direction
+    description: Set Anchor direction
+    type: vertical | horizontal
+    default: vertical
+  - property: key
+    description: The unique identifier of the Anchor Link
+    type: string | number
+    default: '-'
+  - property: href
+    description: The target of hyperlink
+    type: string
+    default: ''
+  - property: target
+    description: Specifies where to display the linked URL
+    type: string
+    default: ''
+  - property: title
+    description: The content of hyperlink
+    type: ReactNode
+    default: ''
+  - property: children
+    description: >-
+      Nested Anchor Link, Attention: This attribute does not support horizontal
+      orientation
+    type: AnchorItem[]
+    default: '-'
+  - property: href
+    description: The target of hyperlink
+    type: string
+    default: ''
+  - property: target
+    description: Specifies where to display the linked URL
+    type: string
+    default: ''
+  - property: title
+    description: The content of hyperlink
+    type: ReactNode
+    default: ''

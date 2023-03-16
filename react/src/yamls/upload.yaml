@@ -1,0 +1,176 @@
+upload:
+  - property: accept
+    description: File types that can be accepted. See input accept Attribute
+    type: string
+    default: '-'
+  - property: action
+    description: Uploading URL
+    type: string | (file) => Promise<string>
+    default: '-'
+  - property: beforeUpload
+    description: >-
+      Hook function which will be executed before uploading. Uploading will be
+      stopped with false or a rejected Promise returned. When returned value is
+      Upload.LIST_IGNORE, the list of files that have been uploaded will ignore
+      it. Warning：this function is not supported in IE9
+    type: (file, fileList) => boolean | Promise<File> | Upload.LIST_IGNORE
+    default: '-'
+  - property: customRequest
+    description: >-
+      Override for the default xhr behavior allowing for additional
+      customization and ability to implement your own XMLHttpRequest
+    type: function
+    default: '-'
+  - property: data
+    description: Uploading extra params or function which can return uploading extra params
+    type: object | (file) => object | Promise<object>
+    default: '-'
+  - property: defaultFileList
+    description: Default list of files that have been uploaded
+    type: object[]
+    default: '-'
+  - property: directory
+    description: Support upload whole directory (caniuse)
+    type: boolean
+    default: 'false'
+  - property: disabled
+    description: Disable upload button
+    type: boolean
+    default: 'false'
+  - property: fileList
+    description: >-
+      List of files that have been uploaded (controlled). Here is a common issue
+      #2423 when using it
+    type: UploadFile[]
+    default: '-'
+  - property: headers
+    description: Set request headers, valid above IE10
+    type: object
+    default: '-'
+  - property: iconRender
+    description: Custom show icon
+    type: '(file: UploadFile, listType?: UploadListType) => ReactNode'
+    default: '-'
+  - property: isImageUrl
+    description: Customize if render <img /> in thumbnail
+    type: '(file: UploadFile) => boolean'
+    default: (inside implementation)
+  - property: itemRender
+    description: Custom item of uploadList
+    type: >-
+      (originNode: ReactElement, file: UploadFile, fileList: object[], actions:
+      { download: function, preview: function, remove: function }) =>
+      React.ReactNode
+    default: '-'
+  - property: listType
+    description: >-
+      Built-in stylesheets, support for four types: text, picture, picture-card
+      or picture-circle
+    type: string
+    default: text
+  - property: maxCount
+    description: >-
+      Limit the number of uploaded files. Will replace current one when maxCount
+      is 1
+    type: number
+    default: '-'
+  - property: method
+    description: The http method of upload request
+    type: string
+    default: post
+  - property: multiple
+    description: >-
+      Whether to support selected multiple file. IE10+ supported. You can select
+      multiple files with CTRL holding down while multiple is set to be true
+    type: boolean
+    default: 'false'
+  - property: name
+    description: The name of uploading file
+    type: string
+    default: file
+  - property: openFileDialogOnClick
+    description: Click open file dialog
+    type: boolean
+    default: 'true'
+  - property: previewFile
+    description: Customize preview file logic
+    type: '(file: File | Blob) => Promise<dataURL: string>'
+    default: '-'
+  - property: progress
+    description: Custom progress bar
+    type: ProgressProps (support type="line" only)
+    default: '{ strokeWidth: 2, showInfo: false }'
+  - property: showUploadList
+    description: >-
+      Whether to show default upload list, could be an object to specify
+      showPreviewIcon, showRemoveIcon, showDownloadIcon, removeIcon and
+      downloadIcon individually
+    type: >-
+      boolean | { showPreviewIcon?: boolean, showDownloadIcon?: boolean,
+      showRemoveIcon?: boolean, previewIcon?: ReactNode | (file: UploadFile) =>
+      ReactNode, removeIcon?: ReactNode | (file: UploadFile) => ReactNode,
+      downloadIcon?: ReactNode | (file: UploadFile) => ReactNode }
+    default: 'true'
+  - property: withCredentials
+    description: The ajax upload with cookie sent
+    type: boolean
+    default: 'false'
+  - property: onChange
+    description: >-
+      A callback function, can be executed when uploading state is changing, see
+      onChange
+    type: function
+    default: '-'
+  - property: onDrop
+    description: >-
+      A callback function executed when files are dragged and dropped into
+      upload area
+    type: '(event: React.DragEvent) => void'
+    default: '-'
+  - property: onDownload
+    description: >-
+      Click the method to download the file, pass the method to perform the
+      method logic, do not pass the default jump to the new TAB
+    type: 'function(file): void'
+    default: (Jump to new TAB)
+  - property: onPreview
+    description: >-
+      A callback function, will be executed when file link or preview icon is
+      clicked
+    type: function(file)
+    default: '-'
+  - property: onRemove
+    description: >-
+      A callback function, will be executed when removing file button is
+      clicked, remove event will be prevented when return value is false or a
+      Promise which resolve(false) or reject
+    type: 'function(file): boolean | Promise'
+    default: '-'
+  - property: crossOrigin
+    description: CORS settings attributes
+    type: '''anonymous'' | ''use-credentials'' | '''''
+    default: '-'
+  - property: name
+    description: File name
+    type: string
+    default: '-'
+  - property: percent
+    description: Upload progress percent
+    type: number
+    default: '-'
+  - property: status
+    description: Upload status. Show different style when configured
+    type: error | success | done | uploading | removed
+    default: '-'
+  - property: thumbUrl
+    description: Thumb image url
+    type: string
+    default: '-'
+  - property: uid
+    description: unique id. Will auto generate when not provided
+    type: string
+    default: '-'
+  - property: url
+    description: Download url
+    type: string
+    default: '-'

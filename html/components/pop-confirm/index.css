@@ -1,0 +1,50 @@
+.container {
+  width: 309px;
+}
+.popconfirm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tooltip-content {
+  box-shadow: 6px 5px 16px 0 rgba(0, 0, 0, 0.13),
+    0 4px 3px 0 rgba(0, 0, 0, 0.05);
+  background-color: var(--darkmode-text-title-primary);
+  overflow: hidden;
+  border-radius: 2px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 100%;
+}
+.tooltip-texts {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+.icon {
+  width: 19px;
+  height: 19px;
+  margin-right: 6px;
+}
+.popconfirm-text {
+  color: var(--text-title);
+  text-align: center;
+  font-family: var(--body-p1-regular-family);
+  font-size: var(--body-p1-regular-size);
+  font-weight: var(--body-p1-regular-weight);
+  line-height: var(--body-p1-regular-line-height);
+}
+.btn-group {
+  display: flex;
+  align-items: flex-start;
+}
+.button:not(:last-of-type) {
+  margin-right: 5px;
+}
+.polygon-4 {
+  width: 10.1px;
+  height: 7px;
+}

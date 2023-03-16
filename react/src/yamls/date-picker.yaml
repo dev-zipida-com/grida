@@ -1,0 +1,358 @@
+date-picker:
+  - property: allowClear
+    description: Whether to show clear button
+    type: boolean
+    default: 'true'
+  - property: autoFocus
+    description: If get focus when component mounted
+    type: boolean
+    default: 'false'
+  - property: bordered
+    description: Whether has border style
+    type: boolean
+    default: 'true'
+  - property: className
+    description: The picker className
+    type: string
+    default: '-'
+  - property: dateRender
+    description: Custom rendering function for date cells
+    type: 'function(currentDate: dayjs, today: dayjs) => React.ReactNode'
+    default: '-'
+  - property: disabled
+    description: Determine whether the DatePicker is disabled
+    type: boolean
+    default: 'false'
+  - property: disabledDate
+    description: Specify the date that cannot be selected
+    type: '(currentDate: dayjs) => boolean'
+    default: '-'
+  - property: popupClassName
+    description: To customize the className of the popup calendar
+    type: string
+    default: '-'
+  - property: getPopupContainer
+    description: >-
+      To set the container of the floating layer, while the default is to create
+      a div element in body
+    type: function(trigger)
+    default: '-'
+  - property: inputReadOnly
+    description: >-
+      Set the readonly attribute of the input tag (avoids virtual keyboard on
+      touch devices)
+    type: boolean
+    default: 'false'
+  - property: locale
+    description: Localization configuration
+    type: object
+    default: default
+  - property: mode
+    description: The picker panel mode（ Cannot select year or month anymore? )
+    type: time | date | month | year | decade
+    default: '-'
+  - property: nextIcon
+    description: The custom next icon
+    type: ReactNode
+    default: '-'
+  - property: open
+    description: The open state of picker
+    type: boolean
+    default: '-'
+  - property: panelRender
+    description: Customize panel render
+    type: (panelNode) => ReactNode
+    default: '-'
+  - property: picker
+    description: Set picker type
+    type: date | week | month | quarter | year
+    default: date
+  - property: placeholder
+    description: The placeholder of date input
+    type: string | [string,string]
+    default: '-'
+  - property: placement
+    description: The position where the selection box pops up
+    type: bottomLeft bottomRight topLeft topRight
+    default: bottomLeft
+  - property: popupStyle
+    description: To customize the style of the popup calendar
+    type: CSSProperties
+    default: '{}'
+  - property: presets
+    description: The preset ranges for quick selection
+    type: '{ label: React.ReactNode, value: dayjs }[]'
+    default: '-'
+  - property: prevIcon
+    description: The custom prev icon
+    type: ReactNode
+    default: '-'
+  - property: size
+    description: >-
+      To determine the size of the input box, the height of large and small, are
+      40px and 24px respectively, while default size is 32px
+    type: large | middle | small
+    default: '-'
+  - property: status
+    description: Set validation status
+    type: '''error'' | ''warning'''
+    default: '-'
+  - property: style
+    description: To customize the style of the input box
+    type: CSSProperties
+    default: '{}'
+  - property: suffixIcon
+    description: The custom suffix icon
+    type: ReactNode
+    default: '-'
+  - property: superNextIcon
+    description: The custom super next icon
+    type: ReactNode
+    default: '-'
+  - property: superPrevIcon
+    description: The custom super prev icon
+    type: ReactNode
+    default: '-'
+  - property: onOpenChange
+    description: >-
+      Callback function, can be executed whether the popup calendar is popped up
+      or closed
+    type: function(open)
+    default: '-'
+  - property: onPanelChange
+    description: Callback when picker panel mode is changed
+    type: function(value, mode)
+    default: '-'
+  - property: blur()
+    description: Remove focus
+    type: ''
+    default: ''
+  - property: focus()
+    description: Get focus
+    type: ''
+    default: ''
+  - property: defaultPickerValue
+    description: To set default picker date
+    type: dayjs
+    default: '-'
+  - property: defaultValue
+    description: >-
+      To set default date, if start time or end time is null or undefined, the
+      date range will be an open interval
+    type: dayjs
+    default: '-'
+  - property: disabledTime
+    description: To specify the time that cannot be selected
+    type: function(date)
+    default: '-'
+  - property: format
+    description: >-
+      To set the date format, refer to dayjs. When an array is provided, all
+      values are used for parsing and first value is used for formatting,
+      support Custom Format
+    type: 'string | (value: dayjs) => string | (string | (value: dayjs) => string)[]'
+    default: YYYY-MM-DD
+  - property: renderExtraFooter
+    description: Render extra footer in panel
+    type: (mode) => React.ReactNode
+    default: '-'
+  - property: showNow
+    description: Whether to show 'Now' button on panel when showTime is set
+    type: boolean
+    default: '-'
+  - property: showTime
+    description: To provide an additional time selection
+    type: object | boolean
+    default: TimePicker Options
+  - property: showTime.defaultValue
+    description: To set default time of selected date, demo
+    type: dayjs
+    default: dayjs()
+  - property: showToday
+    description: Whether to show Today button
+    type: boolean
+    default: 'true'
+  - property: value
+    description: To set date
+    type: dayjs
+    default: '-'
+  - property: onChange
+    description: Callback function, can be executed when the selected time is changing
+    type: 'function(date: dayjs, dateString: string)'
+    default: '-'
+  - property: onOk
+    description: Callback when click ok button
+    type: function()
+    default: '-'
+  - property: onPanelChange
+    description: Callback function for panel changing
+    type: function(value, mode)
+    default: '-'
+  - property: defaultPickerValue
+    description: To set default picker date
+    type: dayjs
+    default: '-'
+  - property: defaultValue
+    description: To set default date
+    type: dayjs
+    default: '-'
+  - property: format
+    description: To set the date format, refer to dayjs
+    type: string
+    default: YYYY
+  - property: renderExtraFooter
+    description: Render extra footer in panel
+    type: () => React.ReactNode
+    default: '-'
+  - property: value
+    description: To set date
+    type: dayjs
+    default: '-'
+  - property: onChange
+    description: Callback function, can be executed when the selected time is changing
+    type: 'function(date: dayjs, dateString: string)'
+    default: '-'
+  - property: defaultPickerValue
+    description: To set default picker date
+    type: dayjs
+    default: '-'
+  - property: defaultValue
+    description: To set default date
+    type: dayjs
+    default: '-'
+  - property: format
+    description: To set the date format, refer to dayjs
+    type: string
+    default: YYYY-\QQ
+  - property: renderExtraFooter
+    description: Render extra footer in panel
+    type: () => React.ReactNode
+    default: '-'
+  - property: value
+    description: To set date
+    type: dayjs
+    default: '-'
+  - property: onChange
+    description: Callback function, can be executed when the selected time is changing
+    type: 'function(date: dayjs, dateString: string)'
+    default: '-'
+  - property: defaultPickerValue
+    description: To set default picker date
+    type: dayjs
+    default: '-'
+  - property: defaultValue
+    description: To set default date
+    type: dayjs
+    default: '-'
+  - property: format
+    description: To set the date format, refer to dayjs
+    type: string
+    default: YYYY-MM
+  - property: monthCellRender
+    description: Custom month cell content render method
+    type: 'function(date, locale): ReactNode'
+    default: '-'
+  - property: renderExtraFooter
+    description: Render extra footer in panel
+    type: () => React.ReactNode
+    default: '-'
+  - property: value
+    description: To set date
+    type: dayjs
+    default: '-'
+  - property: onChange
+    description: Callback function, can be executed when the selected time is changing
+    type: 'function(date: dayjs, dateString: string)'
+    default: '-'
+  - property: defaultPickerValue
+    description: To set default picker date
+    type: dayjs
+    default: '-'
+  - property: defaultValue
+    description: To set default date
+    type: dayjs
+    default: '-'
+  - property: format
+    description: To set the date format, refer to dayjs
+    type: string
+    default: YYYY-wo
+  - property: renderExtraFooter
+    description: Render extra footer in panel
+    type: (mode) => React.ReactNode
+    default: '-'
+  - property: value
+    description: To set date
+    type: dayjs
+    default: '-'
+  - property: onChange
+    description: Callback function, can be executed when the selected time is changing
+    type: 'function(date: dayjs, dateString: string)'
+    default: '-'
+  - property: allowEmpty
+    description: Allow start or end input leave empty
+    type: '[boolean, boolean]'
+    default: '[false, false]'
+  - property: dateRender
+    description: Customize date cell. info argument is added in 4.3.0
+    type: >-
+      function(currentDate: dayjs, today: dayjs, info: { range: start | end })
+      => React.ReactNode
+    default: '-'
+  - property: defaultPickerValue
+    description: To set default picker date
+    type: '[dayjs, dayjs]'
+    default: '-'
+  - property: defaultValue
+    description: To set default date
+    type: '[dayjs, dayjs]'
+    default: '-'
+  - property: disabled
+    description: If disable start or end
+    type: '[boolean, boolean]'
+    default: '-'
+  - property: disabledTime
+    description: To specify the time that cannot be selected
+    type: 'function(date: dayjs, partial: start | end)'
+    default: '-'
+  - property: format
+    description: >-
+      To set the date format, refer to dayjs. When an array is provided, all
+      values are used for parsing and first value is used for formatting
+    type: string | string[]
+    default: YYYY-MM-DD HH:mm:ss
+  - property: presets
+    description: The preset ranges for quick selection
+    type: '{ label: React.ReactNode, value: dayjs[] }[]'
+    default: '-'
+  - property: renderExtraFooter
+    description: Render extra footer in panel
+    type: () => React.ReactNode
+    default: '-'
+  - property: separator
+    description: Set separator between inputs
+    type: React.ReactNode
+    default: <SwapRightOutlined />
+  - property: showTime
+    description: To provide an additional time selection
+    type: object | boolean
+    default: TimePicker Options
+  - property: showTime.defaultValue
+    description: To set default time of selected date, demo
+    type: dayjs[]
+    default: '[dayjs(), dayjs()]'
+  - property: value
+    description: To set date
+    type: '[dayjs, dayjs]'
+    default: '-'
+  - property: onCalendarChange
+    description: >-
+      Callback function, can be executed when the start time or the end time of
+      the range is changing. info argument is added in 4.4.0
+    type: >-
+      function(dates: [dayjs, dayjs], dateStrings: [string, string], info: {
+      range:start|end })
+    default: '-'
+  - property: onChange
+    description: Callback function, can be executed when the selected time is changing
+    type: 'function(dates: [dayjs, dayjs], dateStrings: [string, string])'
+    default: '-'
