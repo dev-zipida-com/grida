@@ -1,0 +1,171 @@
+.calendar {
+  background-color: var(--darkmode-text-title-primary);
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 42px 71px;
+  box-shadow: 2px 3px 4px 0 rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border: 1px solid var(--text-disabled-divider);
+}
+.calendar-header {
+  margin-bottom: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: stretch;
+}
+.calendar-select {
+  display: flex;
+  align-items: center;
+}
+.calendar-header-text {
+  color: var(--text-title);
+  margin-right: 14px;
+  font-family: var(--heading-h2-bold-family);
+  font-size: var(--heading-h2-bold-size);
+  font-weight: var(--heading-h2-bold-weight);
+  line-height: var(--heading-h2-bold-line-height);
+}
+.vector {
+  width: 12.25px;
+  height: 6.9px;
+}
+.day-of-week {
+  margin-bottom: 36px;
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+.week-text-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex: 1;
+}
+.week-text-inner:not(:last-of-type) {
+  margin-right: 22px;
+}
+.week-text-black {
+  font-family: 'Pretendard';
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: var(--text-title);
+}
+.calendar-date-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+.calendar-date-row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  height: 144px;
+  align-self: stretch;
+}
+.calendar-divider-container {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+}
+.calendar-divider {
+  height: 2px;
+  flex: 1;
+  width: 100%;
+  background: #dedede;
+  border-radius: 10px;
+}
+.calendar-divider.active {
+  background: #8c3eff;
+}
+.calendar-divider:not(:last-of-type) {
+  margin-right: 22px;
+}
+.day-of-week-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  height: 142px;
+  align-self: stretch;
+}
+.week-text-inner-row {
+  padding: 22px 0 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex: 1;
+  align-self: stretch;
+}
+.week-text-inner-row:not(:last-of-type) {
+  margin-right: 22px;
+}
+.week-text-dis {
+  color: var(--text-secondary);
+  font-family: var(--heading-h4-regular-family);
+  font-size: var(--heading-h4-regular-size);
+  font-weight: var(--heading-h4-regular-weight);
+  line-height: var(--heading-h4-regular-line-height);
+}
+.week-text-black-two {
+  color: var(--text-title);
+  font-family: var(--heading-h4-regular-family);
+  font-size: var(--heading-h4-regular-size);
+  font-weight: var(--heading-h4-regular-weight);
+  line-height: var(--heading-h4-regular-line-height);
+}
+.week-text-inner-row-active {
+  background-color: rgba(73, 19, 250, 0.1);
+  margin-right: 22px;
+  padding: 22px 0 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  flex: 1;
+  align-self: stretch;
+}
+.week-text-color {
+  color: var(--theme-default);
+  font-family: var(--heading-h4-regular-family);
+  font-size: var(--heading-h4-regular-size);
+  font-weight: var(--heading-h4-regular-weight);
+  line-height: var(--heading-h4-regular-line-height);
+}
+
+/* radio-group */
+.radio-group {
+  border-radius: 2px;
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid var(--text-disabled-divider);
+}
+.radio-group-default {
+  padding: 4px 27px 4px 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.radio-btn-text {
+  color: var(--text-primary);
+  font-family: var(--heading-h5-medium-family);
+  font-size: var(--heading-h5-medium-size);
+  font-weight: var(--heading-h5-medium-weight);
+  line-height: var(--heading-h5-medium-line-height);
+}
+.radio-group-active {
+  padding: 3px 26px 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--theme-default);
+}
+.radio-btn-text-active {
+  color: var(--theme-default);
+  font-family: var(--heading-h5-medium-family);
+  font-size: var(--heading-h5-medium-size);
+  font-weight: var(--heading-h5-medium-weight);
+  line-height: var(--heading-h5-medium-line-height);
+}

@@ -1,0 +1,25 @@
+.vert-tabs-item {
+  display: flex;
+  align-items: center;
+}
+.nav-item-content {
+  margin-right: 20px;
+  padding: 0 0 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+}
+.nav-text {
+  color: var(--theme-default);
+  text-align: center;
+  font-family: var(--body-p1-medium-family);
+  font-size: var(--body-p1-medium-size);
+  font-weight: var(--body-p1-medium-weight);
+  line-height: var(--body-p1-medium-line-height);
+}
+.nav-divider {
+  width: 1px;
+  height: 38px;
+  background-color: var(--theme-default);
+}

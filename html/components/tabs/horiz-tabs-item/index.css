@@ -1,0 +1,23 @@
+.horiz-tabs-item {
+  width: 200px;
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--theme-default);
+}
+.nav-item-content {
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-text {
+  color: var(--theme-default);
+  text-align: center;
+  font-family: var(--body-p1-medium-family);
+  font-size: var(--body-p1-medium-size);
+  font-weight: var(--body-p1-medium-weight);
+  line-height: var(--body-p1-medium-line-height);
+}

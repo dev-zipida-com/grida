@@ -1,0 +1,35 @@
+.grida-button {
+  border-radius: 100px;
+  padding: 4px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(222, 222, 222, 1);
+}
+
+.grida-button-text {
+  text-align: center;
+  font-family: 'Pretendard';
+  font-size: '16px';
+  font-weight: '500';
+  line-height: '24px';
+}
+
+.grida-button.default {
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(222, 222, 222, 1);
+}
+
+.grida-button-text.default {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.grida-button.primary {
+  background-color: rgba(140, 62, 255, 1);
+  border: 1px solid rgba(222, 222, 222, 1);
+}
+
+.grida-button-text.primary {
+  color: rgba(255, 255, 255, 1);
+}

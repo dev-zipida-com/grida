@@ -1,0 +1,105 @@
+.cascader-basic-box {
+  background-color: var(--darkmode-text-title-primary);
+  overflow: hidden;
+  border-radius: 2px;
+  box-shadow: 2px 0 11px 0 rgba(0, 0, 0, 0.05), 0 4px 3px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid var(--text-disabled-divider);
+}
+.cascader-basic-section {
+  background-color: var(--darkmode-text-title-primary);
+  padding: 4px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  flex: 1;
+}
+.menu-item-cascade {
+  align-self: stretch;
+}
+.cascader-basic-border {
+  width: 1px;
+  background-color: var(--text-disabled-divider);
+  align-self: stretch;
+}
+
+.menu-item-cascade.active {
+  background-color: var(--background-tag);
+  padding: 4px 16px 6px;
+  display: flex;
+  align-items: flex-start;
+}
+.dropdown-cascading-content.active {
+  padding: 0 0 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+.dropdown-option-text.active {
+  color: var(--text-title);
+  font-family: var(--body-p1-regular-family);
+  font-size: var(--body-p1-regular-size);
+  font-weight: var(--body-p1-regular-weight);
+  line-height: var(--body-p1-regular-line-height);
+}
+.icon-tri-right.active {
+  width: 5.95px;
+  height: 7px;
+}
+
+.menu-item-cascade {
+  padding: 4px 16px 6px;
+  display: flex;
+  align-items: flex-start;
+}
+.dropdown-cascading-content {
+  padding: 0 0 1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+.dropdown-option-text {
+  color: var(--text-title);
+  font-family: var(--body-p1-regular-family);
+  font-size: var(--body-p1-regular-size);
+  font-weight: var(--body-p1-regular-weight);
+  line-height: var(--body-p1-regular-line-height);
+}
+.icon-tri-right {
+  width: 5.95px;
+  height: 7px;
+}
+
+.menu-item {
+  width: 100%;
+  background-color: var(--darkmode-text-title-primary);
+  padding: 4px 16px 6px;
+  display: flex;
+  align-items: center;
+}
+.dropdown-option-text {
+  color: var(--text-title);
+  font-family: var(--body-p1-regular-family);
+  font-size: var(--body-p1-regular-size);
+  font-weight: var(--body-p1-regular-weight);
+  line-height: var(--body-p1-regular-line-height);
+}
+
+.menu-item.active {
+  width: 100%;
+  background-color: var(--background-tag);
+  padding: 4px 16px 6px;
+  display: flex;
+  align-items: center;
+}
+.dropdown-option-text.active {
+  color: var(--text-title);
+  font-family: var(--body-p1-regular-family);
+  font-size: var(--body-p1-regular-size);
+  font-weight: var(--body-p1-regular-weight);
+  line-height: var(--body-p1-regular-line-height);
+}
