@@ -1,0 +1,6 @@
+.skeleton {
+  width: 35px;
+  height: 35px;
+  background-color: var(--background-primary);
+  border-radius: 70px;
+}

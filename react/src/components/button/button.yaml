@@ -1,0 +1,12 @@
+# button.defaults.yaml
+
+props:
+  type:
+    type: string
+    default: 'default'
+  onClick:
+    type: func
+    default: () => { console.log('Button clicked'); }
+  disabled:
+    type: boolean
+    default: false

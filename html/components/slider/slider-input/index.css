@@ -1,0 +1,73 @@
+.slider-input {
+  padding: 12px 0 0.5px;
+  display: flex;
+  align-items: flex-start;
+}
+.flex-wrapper-one {
+  margin-right: 38px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.slider {
+  height: 43.33%;
+  align-self: stretch;
+  object-fit: cover;
+}
+
+/* tooltip */
+.tooltip {
+  margin-bottom: 1px;
+  margin-left: 253.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.tooltip-content {
+  background-color: rgba(42, 44, 66, 0.9);
+  overflow: hidden;
+  border-radius: 2px;
+  padding: 5px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.bottom-tooltip {
+  color: var(--darkmode-text-title-primary);
+  font-family: var(--caption-regular-family);
+  font-size: var(--caption-regular-size);
+  font-weight: var(--caption-regular-weight);
+  line-height: var(--caption-regular-line-height);
+}
+.polygon-3 {
+  width: 10.1px;
+  height: 7px;
+}
+
+/* Input Number */
+.input-number {
+  background-color: var(--darkmode-text-title-primary);
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--text-disabled-divider);
+  margin-top: 29.5px;
+}
+.inputnumber-content {
+  padding: 0 12px;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  align-self: stretch;
+}
+.inputnumber-text {
+  color: var(--text-title);
+  flex: 1;
+  font-family: var(--body-p1-medium-family);
+  font-size: var(--body-p1-medium-size);
+  font-weight: var(--body-p1-medium-weight);
+  line-height: var(--body-p1-medium-line-height);
+}

@@ -1,0 +1,23 @@
+.menu-item-cascade {
+  width: 130px;
+  padding: 5px 16px;
+  display: flex;
+  align-items: flex-start;
+}
+.dropdown-cascading-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+.dropdown-option-text {
+  color: var(--text-title);
+  font-family: var(--body-p1-regular-family);
+  font-size: var(--body-p1-regular-size);
+  font-weight: var(--body-p1-regular-weight);
+  line-height: var(--body-p1-regular-line-height);
+}
+.icon-tri-right {
+  width: 5.95px;
+  height: 7px;
+}
